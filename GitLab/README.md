@@ -13,8 +13,12 @@
     if user.save
     ...
 
-2.去除前台的注册功能
+2.去除前台的注册功能(默认是关闭的,若开启,按下列步骤关闭)
 
+    vi /etc/gitlab/gitlab.rb
+    gitlab_rails['gitlab_signup_enabled'] = false
+    //使配置生效
+    sudo gitlab-ctl reconfigure
 
 3.配置不允许用户修改邮件:
 
