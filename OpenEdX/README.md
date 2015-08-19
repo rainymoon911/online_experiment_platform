@@ -133,6 +133,8 @@ edx在Ubuntu12.04 64上的部署
 利用ansible进行安装,此处耗时可能较长
 
     cd /var/tmp/configuration/playbooks && sudo ansible-playbook -c local ./edx_sandbox.yml -i "localhost,"
+    
+可能有某个工具安装失败,如果出现则手动安装该工具后再重新安装
 
 (7)
 安装完成后,在本地的80端口访问lms,18010端口访问studio
