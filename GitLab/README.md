@@ -13,4 +13,14 @@
     if user.save
     ...
 
-2.使shibboleth登录的账号能与本地账号关联而不是冲突
+2.去除前台的注册功能
+
+
+3.配置不允许用户修改邮件:
+
+    vi /etc/gitlab/gitlab.rb
+    gitlab_rails['gitlab_username_changing_enabled'] = false
+    //使配置生效
+    sudo gitlab-ctl reconfigure
+    
+4.去除邮件查重(由于shibboleth登录时会报邮件已存在的错误,不像OpenEdX能与本地账号绑定)
