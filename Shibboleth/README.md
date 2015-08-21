@@ -1,8 +1,10 @@
 部署Shibboleth需要LDAP服务器,IDP服务器,以及在Gitlab,OpenEdX上分别部署SP.
+====
 
 更详细的文档以及配置文件可以参见[shibboleth仓库](https://github.com/rainymoon911/shibboleth-for-edx)
 
 1.部署LDAP服务器.
+====
 
 1.1 安装OpenLDAP即可视化工具
 
@@ -23,7 +25,7 @@
 
 
 2.部署IDP
-
+====
 
 2.1 安装apache 以及 tomcat:
 
@@ -128,7 +130,10 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 	<afp:AttributeRule attributeID="commonName">
 	    <afp:PermitValueRule xsi:type="basic:ANY" />
 
-修改attribute-resolver.xml中的ldapURL,baseDN,以及管理员名称以及密码
+修改attribute-resolver.xml中的ldapURL,baseDN,以及管理员名称,密码
+
+3.在Gitlab上配置SP
+====
 
 
     
