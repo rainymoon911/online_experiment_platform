@@ -28,3 +28,5 @@
     sudo gitlab-ctl reconfigure
     
 4.去除邮件查重(由于shibboleth登录时会报邮件已存在的错误,不像OpenEdX能与本地账号绑定)
+
+5.创建教师账号,用户名teacher,教师以管理员的账号在Docker的配置文件中会用到
