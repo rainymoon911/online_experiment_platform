@@ -1,0 +1,50 @@
+<div class="uc_docker_block wrapper-comp-settings is-active editor-with-buttons">
+    <ul class="list-input settings-list">
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="lab_name">Lab Name</label>
+                <input class="input setting-input" type="text" id="lab_name" name="lab_name" maxlength="16" required="required" value="" />
+            </div>
+            <span class="tip setting-help"></span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="lab_name">Git Repo</label>
+                <input class="input setting-input" type="text" id="lab_project" name="lab_project" required="required" value="" />
+            </div>
+            <span class="tip setting-help"></span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="lab_desc">Lab Description</label>
+                <textarea class="input setting-input setting-textarea" id="lab_desc" name="lab_desc" rows="4"></textarea>
+            </div>
+            <span class="tip setting-help"></span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="lab_docker_file">Dockerfile</label>
+                <textarea class="input setting-input setting-textarea" id="lab_docker_file" name="lab_docker_file" rows="15">{{ docker_file }}</textarea>
+            </div>
+            <span class="tip setting-help">Your docker must FROM uclassroom/ucore-vnc-base.</span>
+        </li>
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="lab_make_scripts">Make Scripts</label>
+                <textarea class="input setting-input setting-textarea" id="lab_make_scripts" name="lab_make_scripts" rows="4"></textarea>
+            </div>
+            <span class="tip setting-help"></span>
+        </li>
+    </ul>
+    <div class="xblock-actions">
+        <span class="error-message"></span>
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-primary save-button">Save</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button cancel-button">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>

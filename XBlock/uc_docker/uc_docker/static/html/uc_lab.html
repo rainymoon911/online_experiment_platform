@@ -1,0 +1,28 @@
+<div class="uc_docker_block uc_xblock">
+    <h2>Labs Management</h2>
+    <div>
+        <table class="uc_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Build Time</th>
+                    <th>Status</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tfoot></tfoot>
+            <tbody>
+                {% for lab in labs %}
+                <tr>
+                    <td>{{ lab.name }}</td>
+                    <td>{{ lab.creation_time }}</td>
+                    <td>{{ lab.status }}</td>
+                    <td>
+                        <a id href="javascript:void(0);" name="{{ lab.name }}">Detail</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

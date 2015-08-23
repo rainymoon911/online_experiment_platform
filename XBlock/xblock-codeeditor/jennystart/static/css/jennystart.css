@@ -1,0 +1,9 @@
+/* CSS for JennystartXBlock */
+
+.jennystart_block .count {
+    font-weight: bold;
+}
+
+.jennystart_block p {
+    cursor: pointer;
+}
