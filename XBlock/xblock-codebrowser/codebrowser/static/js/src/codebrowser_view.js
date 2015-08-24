@@ -8,6 +8,15 @@ function CodeBrowserBlock(runtime, element) {
       window.location.reload(true);
     });
   });
+  $(element).find('#generate_local_btn').bind('click', function() {
+    var handlerUrl = runtime.handlerUrl(element, 'generate_local');
+    var data = {
+      lab: $("#lab", element).val()
+    };
+    $.post(handlerUrl, JSON.stringify(data)).done(function(response) {
+      window.location.reload(true);
+    });
+  });
 
   $(element).find('#edit_btn').bind('click', function() {
     var handlerUrl = runtime.handlerUrl(element, 'edit');
