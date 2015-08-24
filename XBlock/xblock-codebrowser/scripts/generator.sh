@@ -19,7 +19,9 @@ cd $code_base/$id/ucore_lab
 cp $woboq_base/scripts/fake_compiler.sh ../
 sed -i "s/\$COMPILATION_COMMANDS/\/edx\/var\/edxapp\/staticfiles\/ucore\/$id\/compile_commands.json/g" ../fake_compiler.sh
 
+eval `ssh-agent -s`
 ssh-add $key_file
+git remote remove origin$id
 git remote add origin$id git@$id:$username/ucore_lab.git
 git pull origin$id master
 
