@@ -1,6 +1,6 @@
 ###uc_docker需要在OpenEdX上部署Docker,以控制另一台服务器上的Docker容器
 
-###1.在OpenEdX上部署Docker
+###1.在OpenEdX上部署Docker(版本必须与Docker服务器保持一致)
 
 参考[官方部署流程](http://docs.docker.com/installation/ubuntulinux/#ubuntu-precise-1204-lts-64-bit)
 
