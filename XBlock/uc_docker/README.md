@@ -7,7 +7,7 @@
 
 ###2.部署Docker服务器(推荐使用CentOS 7)
 
-*同样先安装Docker(版本必须与上一步的Docker保持一致)
+* 同样先安装Docker(版本必须与上一步的Docker保持一致)
 
 * 创建密钥
   编辑脚本`scripts/pemgen.sh`，设置环境变量`UC_DOMAIN`为Docker服务器的域名  
