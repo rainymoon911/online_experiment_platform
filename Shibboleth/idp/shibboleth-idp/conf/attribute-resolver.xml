@@ -325,7 +325,7 @@
         ldapURL="ldap://192.168.1.116:389" 
         baseDN="ou=Users,dc=openedx,dc=com" 
         principal="cn=admin,dc=openedx,dc=com"
-        principalCredential="p@ssw0rd">
+        principalCredential="password">
         <dc:FilterTemplate>
             <![CDATA[
                 (uid=$requestContext.principalName)
