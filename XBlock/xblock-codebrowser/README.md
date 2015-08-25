@@ -9,7 +9,11 @@
 
     sudo -u www-data bash
     ./scripts/create_dir.sh
+    cp -r your_woboq_codebrowser_file/* /edx/var/edxapp/woboq_codebrowser/
+    mv ./scripts/generator.sh /edx/var/edxapp/staticfiles/xblock-scripts/
+    mv ./scripts/make.sh /edx/var/edxapp/staticfiles/xblock-scripts/
 
+3.
     
 step 4
 create file(to ensure www-data can run the script and generate file,switch user to www-data)
