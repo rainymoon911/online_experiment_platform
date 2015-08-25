@@ -132,9 +132,101 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 
 修改attribute-resolver.xml中的ldapURL,baseDN,以及管理员名称,密码
 
-3.在Gitlab上配置SP
+3.SP配置(Gitlab,OpenEdX部署SP都需要此步骤作为前提)
+
+3.1.安装
+
+安装Apache上的shib模块
+
+    sudo apt-get install libapache2-mod-shib2
+    a2enmod shib2
+    
+    
+    //if you don't have domain name
+    vi /etc/hosts
+    //add the following code
+    127.0.0.1 sp.edx.org  sp
+    idp-url   idp.edx.org idp
+    
+访问<domain of sp>/Shibboleth.sso/Status,若能显示信息,则一切正常
+
+3.2.配置sp
+
+(如果你没有将idp的端口做修改的话,那么idp默认使用8080端口, sp的配置文件中,除了已经带端口的之外,所有idp的域名都需要改成 "域名:8080" 的形式)
+
+3.2.1
+
+    cd <dir of sp>
+    vi shibboleth2.xml
+    //修改sp的entityID为你SP的域名
+    <ApplicationDefaults entityID="http://sp.edx.org/shibboleth"
+                         REMOTE_USER="eppn persistent-id targeted-id">
+                         
+    //添加 sso
+    <SSO entityID="http://<domain of idp>:8080/shibboleth"
+                 discoveryProtocol="SAMLDS" discoveryURL="https://ds.example.org/DS/WAYF">
+              SAML2 SAML1
+    </SSO>
+    
+    //添加 session initiator
+    <SessionInitiator type="Chaining" Location="/Login" isDefault="true" id="Intranet"
+		relayState="cookie" entityID="http://<domain of idp>:8080/idp/shibboleth" forceAuthn="true">
+	    <SessionInitiator type="SAML2" acsIndex="1" template="bindingTemplate.html"/>
+	    <SessionInitiator type="Shib1" acsIndex="5"/>
+	</SessionInitiator>
+
+3.2.2 配置元数据文件
+与idp不同,sp不默认生成metadata.xml,需要手动生成。
+
+生成密钥:
+
+    shib-keygen -h <domain of sp>(将生成的 sp-key.pem,sp-cert.pem to移至sp的目录)
+    
+[about shib-keygen](http://manpages.ubuntu.com/manpages/lucid/man8/shib-keygen.8.html)
+
+利用密钥生成 sp-metadata.xml,该文件就是配置idp时所需的sp的元数据文件
+
+    shib-metagen -h sp.edx.org> /etc/shibboleth/sp-metadata.xml
+
+在sp端配置idp的元数据文件,将idp服务器上的idp-metadata.xml(或者你可以为该文件重命名)复制到sp服务器上的SP目录(默认为/etc/shibboleth)
+
+在sp端做如下修改:
+
+    vi shibboleth2.xml
+    //add the following code
+    <MetadataProvider type="XML" file="idp-metadata.xml"/>
+    
+3.2.3 配置属性映射文件attribute-map.xml
+
+    vi attribute-map.xml
+    //add the following code
+    <Attribute name="urn:oid:2.5.4.3" id="cn"/>
+    <Attribute name="urn:oid:0.9.2342.19200300.100.1.3" id="mail"/>
+    
+3.2.4 使用shib来保护资源(这一步仅做参考,实际部署时Gitlab与Nginx略有不同)
+
+    vi /etc/apache2/httpd.conf
+    //add the following code
+    <Location /secure>
+    AuthType shibboleth
+    ShibRequireSession On
+    require valid-user
+    </Location>
+
+    cd /var/www/html(depend on your document root of apache)
+    mkdir secure
+    vi test.php
+    //add the following code
+    <?php print_r($_SERVER) ?>
+    
+访问<domain of sp>/secure,你将会被重定向至shibboleth认证页面成功的话,点击test.php ,你将会看到email以及cn属性。
+ 
+
+
+4.在Gitlab上配置SP
 ====
 
+[官方配置文档](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/integration/shibboleth.md)
 
     
 
