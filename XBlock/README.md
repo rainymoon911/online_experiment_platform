@@ -5,20 +5,20 @@
 
 * edx-platform/lms/envs/common.py中去掉注释：
 
-    # from xmodule.x_module import prefer_xmodules
+        #from xmodule.x_module import prefer_xmodules
   
-    # XBLOCK_SELECT_FUNCTION = prefer_xmodules
+        #XBLOCK_SELECT_FUNCTION = prefer_xmodules
   
 * edx-platform/cms/envs/common.py,中去掉注释：
 
-    # from xmodule.x_module import prefer_xmodules
-    # XBLOCK_SELECT_FUNCTION = prefer_xmodules
+        #from xmodule.x_module import prefer_xmodules
+        #XBLOCK_SELECT_FUNCTION = prefer_xmodules
     
 * edx-platform/cms/envs/common.py中把
 
-    'ALLOW_ALL_ADVANCED_COMPONENTS': False,
-    改成：
-    'ALLOW_ALL_ADVANCED_COMPONENTS': True,
+        'ALLOW_ALL_ADVANCED_COMPONENTS': False,
+        改成：
+        'ALLOW_ALL_ADVANCED_COMPONENTS': True,
     
 
 ###XBlock安装完成后需重启服务:
