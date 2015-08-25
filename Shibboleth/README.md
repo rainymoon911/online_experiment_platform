@@ -150,7 +150,7 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
     
 访问<domain of sp>/Shibboleth.sso/Status,若能显示信息,则一切正常
 
-3.2.配置sp
+3.2.配置sp(你可以直接将OpenEdX或者Gitlab下的shib目录文件覆盖至你的shibboleth目录,但涉及到ip以及元数据的配置仍需要按下方提到的步骤修改)
 
 (如果你没有将idp的端口做修改的话,那么idp默认使用8080端口, sp的配置文件中,除了已经带端口的之外,所有idp的域名都需要改成 "域名:8080" 的形式)
 
@@ -259,5 +259,21 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 	sudo gitlab-ctl reconfigure
 
 ```
-    
+配置成功后,在首页可看到shibboleth字样,点击即可通过shibboleth登录
 
+###５.在OpenEdX上配置SP  
+
+* 先按步骤３配置SP
+* 将OpenEdX/edx_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致),并将edx_apache2/sites-available/lms中的S<your domain of OpenEdX>改为OpenEdX的域名
+* 复制/OpenEdX/edx_nginx/sites-available/lms 至 /etc/nginx/sites-available/
+* 重启Apache以及Nginx
+```
+/etc/init.d/nginx restart & /etc/init.d/apache2 restart
+```
+* 开启shibboleth登录
+```
+vi /edx/app/edxapp/edx-platform/lms/envs/common.py
+set 'AUTH_USE_SHIB','SHIB_DISABLE_TOS','RESTRICT_ENROLL_BY_REG_METHOD' true
+```
+* OpenEdX的shibboleth登录针对于某一门课程,在后台的Advanced Option中设置External Login Domain' "shib:<your idp url>"
+* 在前台点击该课程,再点击登录,就会跳至shibboleth登录页面(在首页点击登录仍为正常登录方式)
