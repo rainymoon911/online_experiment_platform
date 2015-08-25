@@ -1,0 +1,389 @@
+09:56:26.554 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeResolver
+09:56:26.684 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: shibTransient
+09:56:26.685 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml1Unspec
+09:56:26.686 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml2Transient
+09:56:26.702 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for AttributeDefinition plugin with ID: transientId
+09:56:47.955 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeResolver service loaded new configuration
+09:56:47.979 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeFilterEngine
+09:56:48.038 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.filtering.AttributeFilterPolicyBeanDefinitionParser:72] - Parsing configuration for attribute filter policy releaseTransientIdToAnyone
+09:56:48.088 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeFilterEngine service loaded new configuration
+09:56:48.110 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML1AttributeAuthority
+09:56:48.128 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML2AttributeAuthority
+09:56:48.150 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.RelyingPartyConfigurationManager
+09:56:48.336 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: anonymous
+09:56:48.337 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: default
+09:56:48.391 - INFO [edu.internet2.middleware.shibboleth.common.config.security.AbstractX509CredentialBeanDefinitionParser:63] - Parsing configuration for X509Filesystem credential with id: IdPCredential
+09:56:48.884 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingSignatureTrustEngineBeanDefinitionParser:59] - Parsing configuration for SignatureChaining trust engine with id: shibboleth.SignatureTrustEngine
+09:56:48.886 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeySignatureTrustEngineBeanDefinitionParser:50] - Parsing configuration for MetadataExplicitKeySignature trust engine with id: shibboleth.SignatureMetadataExplicitKeyTrustEngine
+09:56:48.888 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXSignatureTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXSignature trust engine with id: shibboleth.SignatureMetadataPKIXTrustEngine
+09:56:48.890 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingTrustEngineBeanDefinitionParser:59] - Parsing configuration for Chaining trust engine with id: shibboleth.CredentialTrustEngine
+09:56:48.892 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeyTrustEngineBeanDefinitionParser:48] - Parsing configuration for MetadataExplicitKey trust engine with id: shibboleth.CredentialMetadataExplictKeyTrustEngine
+09:56:48.894 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXX509CredentialTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXX509Credential trust engine with id: shibboleth.CredentialMetadataPKIXTrustEngine
+09:56:48.896 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.ShibbolethSSOSecurityPolicy
+09:56:48.907 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1AttributeQuerySecurityPolicy
+09:56:48.917 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1ArtifactResolutionSecurityPolicy
+09:56:48.921 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SSOSecurityPolicy
+09:56:48.930 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2AttributeQuerySecurityPolicy
+09:56:48.936 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2ArtifactResolutionSecurityPolicy
+09:56:48.942 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SLOSecurityPolicy
+09:56:49.769 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.RelyingPartyConfigurationManager service loaded new configuration
+09:56:49.790 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.HandlerManager
+09:56:49.841 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.JSPErrorHandlerBeanDefinitionParser:46] - Parsing configuration for JSP error handler.
+09:56:49.842 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: Status
+09:56:49.844 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAMLMetadata
+09:56:49.851 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: ShibbolethSSO
+09:56:49.853 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1AttributeQuery
+09:56:49.855 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1ArtifactResolution
+09:56:49.860 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+09:56:49.862 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+09:56:49.863 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+09:56:49.864 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+09:56:49.867 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ECP
+09:56:49.869 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+09:56:49.871 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+09:56:49.872 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+09:56:49.873 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+09:56:49.874 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+09:56:49.877 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2AttributeQuery
+09:56:49.879 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ArtifactResolution
+09:56:50.206 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.HandlerManager service loaded new configuration
+09:57:47.224 - INFO [Shibboleth-Access:73] - 20150504T015747Z|192.168.1.41|192.168.1.115:8080|/profile/Status|
+09:57:47.232 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+10:20:33.238 - INFO [Shibboleth-Access:73] - 20150504T022033Z|192.168.1.41|192.168.1.115:8080|/profile/Status|
+10:20:33.239 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+10:34:49.304 - INFO [Shibboleth-Access:73] - 20150504T023449Z|192.168.1.41|192.168.1.115:8080|/profile/Status|
+10:34:49.305 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+10:46:58.477 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeResolver
+10:46:58.573 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: shibTransient
+10:46:58.574 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml1Unspec
+10:46:58.575 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml2Transient
+10:46:58.610 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for AttributeDefinition plugin with ID: transientId
+10:46:58.823 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeResolver service loaded new configuration
+10:46:58.840 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeFilterEngine
+10:46:58.882 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.filtering.AttributeFilterPolicyBeanDefinitionParser:72] - Parsing configuration for attribute filter policy releaseTransientIdToAnyone
+10:46:58.920 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeFilterEngine service loaded new configuration
+10:46:58.936 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML1AttributeAuthority
+10:46:58.949 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML2AttributeAuthority
+10:46:58.967 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.RelyingPartyConfigurationManager
+10:46:59.108 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: anonymous
+10:46:59.109 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: default
+10:46:59.151 - INFO [edu.internet2.middleware.shibboleth.common.config.security.AbstractX509CredentialBeanDefinitionParser:63] - Parsing configuration for X509Filesystem credential with id: IdPCredential
+10:46:59.428 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingSignatureTrustEngineBeanDefinitionParser:59] - Parsing configuration for SignatureChaining trust engine with id: shibboleth.SignatureTrustEngine
+10:46:59.430 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeySignatureTrustEngineBeanDefinitionParser:50] - Parsing configuration for MetadataExplicitKeySignature trust engine with id: shibboleth.SignatureMetadataExplicitKeyTrustEngine
+10:46:59.431 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXSignatureTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXSignature trust engine with id: shibboleth.SignatureMetadataPKIXTrustEngine
+10:46:59.432 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingTrustEngineBeanDefinitionParser:59] - Parsing configuration for Chaining trust engine with id: shibboleth.CredentialTrustEngine
+10:46:59.433 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeyTrustEngineBeanDefinitionParser:48] - Parsing configuration for MetadataExplicitKey trust engine with id: shibboleth.CredentialMetadataExplictKeyTrustEngine
+10:46:59.435 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXX509CredentialTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXX509Credential trust engine with id: shibboleth.CredentialMetadataPKIXTrustEngine
+10:46:59.436 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.ShibbolethSSOSecurityPolicy
+10:46:59.445 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1AttributeQuerySecurityPolicy
+10:46:59.453 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1ArtifactResolutionSecurityPolicy
+10:46:59.457 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SSOSecurityPolicy
+10:46:59.463 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2AttributeQuerySecurityPolicy
+10:46:59.467 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2ArtifactResolutionSecurityPolicy
+10:46:59.472 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SLOSecurityPolicy
+10:47:00.101 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.RelyingPartyConfigurationManager service loaded new configuration
+10:47:00.116 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.HandlerManager
+10:47:00.161 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.JSPErrorHandlerBeanDefinitionParser:46] - Parsing configuration for JSP error handler.
+10:47:00.162 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: Status
+10:47:00.164 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAMLMetadata
+10:47:00.169 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: ShibbolethSSO
+10:47:00.171 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1AttributeQuery
+10:47:00.173 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1ArtifactResolution
+10:47:00.177 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:47:00.178 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:47:00.179 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:47:00.180 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:47:00.182 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ECP
+10:47:00.184 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:47:00.185 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:47:00.186 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:47:00.187 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:47:00.188 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:47:00.190 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2AttributeQuery
+10:47:00.191 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ArtifactResolution
+10:47:00.525 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.HandlerManager service loaded new configuration
+10:59:05.201 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeResolver
+10:59:05.297 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: shibTransient
+10:59:05.298 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml1Unspec
+10:59:05.299 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml2Transient
+10:59:05.311 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for AttributeDefinition plugin with ID: transientId
+10:59:05.573 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeResolver service loaded new configuration
+10:59:05.592 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeFilterEngine
+10:59:05.640 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.filtering.AttributeFilterPolicyBeanDefinitionParser:72] - Parsing configuration for attribute filter policy releaseTransientIdToAnyone
+10:59:05.686 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeFilterEngine service loaded new configuration
+10:59:05.703 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML1AttributeAuthority
+10:59:05.717 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML2AttributeAuthority
+10:59:05.734 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.RelyingPartyConfigurationManager
+10:59:05.881 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: anonymous
+10:59:05.882 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: default
+10:59:05.925 - INFO [edu.internet2.middleware.shibboleth.common.config.security.AbstractX509CredentialBeanDefinitionParser:63] - Parsing configuration for X509Filesystem credential with id: IdPCredential
+10:59:06.209 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingSignatureTrustEngineBeanDefinitionParser:59] - Parsing configuration for SignatureChaining trust engine with id: shibboleth.SignatureTrustEngine
+10:59:06.210 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeySignatureTrustEngineBeanDefinitionParser:50] - Parsing configuration for MetadataExplicitKeySignature trust engine with id: shibboleth.SignatureMetadataExplicitKeyTrustEngine
+10:59:06.212 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXSignatureTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXSignature trust engine with id: shibboleth.SignatureMetadataPKIXTrustEngine
+10:59:06.213 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingTrustEngineBeanDefinitionParser:59] - Parsing configuration for Chaining trust engine with id: shibboleth.CredentialTrustEngine
+10:59:06.215 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeyTrustEngineBeanDefinitionParser:48] - Parsing configuration for MetadataExplicitKey trust engine with id: shibboleth.CredentialMetadataExplictKeyTrustEngine
+10:59:06.216 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXX509CredentialTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXX509Credential trust engine with id: shibboleth.CredentialMetadataPKIXTrustEngine
+10:59:06.218 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.ShibbolethSSOSecurityPolicy
+10:59:06.227 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1AttributeQuerySecurityPolicy
+10:59:06.235 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1ArtifactResolutionSecurityPolicy
+10:59:06.238 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SSOSecurityPolicy
+10:59:06.245 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2AttributeQuerySecurityPolicy
+10:59:06.250 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2ArtifactResolutionSecurityPolicy
+10:59:06.255 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SLOSecurityPolicy
+10:59:06.965 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.RelyingPartyConfigurationManager service loaded new configuration
+10:59:06.980 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.HandlerManager
+10:59:07.026 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.JSPErrorHandlerBeanDefinitionParser:46] - Parsing configuration for JSP error handler.
+10:59:07.027 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: Status
+10:59:07.028 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAMLMetadata
+10:59:07.034 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: ShibbolethSSO
+10:59:07.036 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1AttributeQuery
+10:59:07.037 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1ArtifactResolution
+10:59:07.041 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:59:07.042 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:59:07.043 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:59:07.044 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+10:59:07.046 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ECP
+10:59:07.049 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:59:07.050 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:59:07.051 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:59:07.052 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:59:07.053 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+10:59:07.054 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2AttributeQuery
+10:59:07.056 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ArtifactResolution
+10:59:07.392 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.HandlerManager service loaded new configuration
+10:59:31.042 - INFO [Shibboleth-Access:73] - 20150504T025931Z|192.168.1.41|192.168.1.115:8080|/profile/Status|
+10:59:31.047 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+11:06:54.419 - INFO [Shibboleth-Access:73] - 20150504T030654Z|192.168.1.41|192.168.1.115:8080|/profile/SAML2/Redirect/SSO|
+11:06:54.471 - ERROR [org.opensaml.common.binding.decoding.BaseSAMLMessageDecoder:215] - SAML message intended destination endpoint 'http://idp.edx.org/idp/profile/SAML2/Redirect/SSO' did not match the recipient endpoint 'http://192.168.1.115:8080/idp/profile/SAML2/Redirect/SSO'
+11:06:54.474 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.xml.security.SecurityException: SAML message intended destination endpoint did not match recipient endpoint
+	at org.opensaml.common.binding.decoding.BaseSAMLMessageDecoder.checkEndpointURI(BaseSAMLMessageDecoder.java:217) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:72) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+11:17:37.193 - INFO [Shibboleth-Access:73] - 20150504T031737Z|192.168.1.114|idp.edx.org:8080|/profile/Status|
+11:17:37.194 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+12:17:03.538 - INFO [Shibboleth-Access:73] - 20150504T041703Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+12:17:03.546 - ERROR [org.opensaml.common.binding.decoding.BaseSAMLMessageDecoder:215] - SAML message intended destination endpoint 'http://idp.edx.org/idp/profile/SAML2/Redirect/SSO' did not match the recipient endpoint 'http://idp.edx.org:8080/idp/profile/SAML2/Redirect/SSO'
+12:17:03.548 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.xml.security.SecurityException: SAML message intended destination endpoint did not match recipient endpoint
+	at org.opensaml.common.binding.decoding.BaseSAMLMessageDecoder.checkEndpointURI(BaseSAMLMessageDecoder.java:217) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:72) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+12:24:37.254 - INFO [Shibboleth-Access:73] - 20150504T042437Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+12:24:37.258 - WARN [org.opensaml.common.binding.security.IssueInstantRule:108] - Message was expired: message issue time was '2015-05-04T04:17:00.000Z', message expired at: '2015-05-04T04:23:00.000Z', current time: '2015-05-04T12:24:37.258+08:00'
+12:24:37.260 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Message was rejected due to issue instant expiration
+	at org.opensaml.common.binding.security.IssueInstantRule.evaluate(IssueInstantRule.java:110) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+12:33:14.221 - INFO [Shibboleth-Access:73] - 20150504T043314Z|192.168.1.114|idp.edx.org:8080|/profile/Metadata/SAML|
+12:35:17.269 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeResolver
+12:35:17.365 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: shibTransient
+12:35:17.366 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml1Unspec
+12:35:17.367 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for PrincipalConnector plugin with ID: saml2Transient
+12:35:17.379 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.resolver.AbstractResolutionPlugInBeanDefinitionParser:55] - Parsing configuration for AttributeDefinition plugin with ID: transientId
+12:35:17.652 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeResolver service loaded new configuration
+12:35:17.670 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.AttributeFilterEngine
+12:35:17.721 - INFO [edu.internet2.middleware.shibboleth.common.config.attribute.filtering.AttributeFilterPolicyBeanDefinitionParser:72] - Parsing configuration for attribute filter policy releaseTransientIdToAnyone
+12:35:17.769 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.AttributeFilterEngine service loaded new configuration
+12:35:17.787 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML1AttributeAuthority
+12:35:17.801 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.SAML2AttributeAuthority
+12:35:17.822 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.RelyingPartyConfigurationManager
+12:35:17.983 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: anonymous
+12:35:17.984 - INFO [edu.internet2.middleware.shibboleth.common.config.relyingparty.RelyingPartyConfigurationBeanDefinitionParser:73] - Parsing configuration for relying party with id: default
+12:35:18.031 - INFO [edu.internet2.middleware.shibboleth.common.config.security.AbstractX509CredentialBeanDefinitionParser:63] - Parsing configuration for X509Filesystem credential with id: IdPCredential
+12:35:18.357 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingSignatureTrustEngineBeanDefinitionParser:59] - Parsing configuration for SignatureChaining trust engine with id: shibboleth.SignatureTrustEngine
+12:35:18.359 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeySignatureTrustEngineBeanDefinitionParser:50] - Parsing configuration for MetadataExplicitKeySignature trust engine with id: shibboleth.SignatureMetadataExplicitKeyTrustEngine
+12:35:18.361 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXSignatureTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXSignature trust engine with id: shibboleth.SignatureMetadataPKIXTrustEngine
+12:35:18.362 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ChainingTrustEngineBeanDefinitionParser:59] - Parsing configuration for Chaining trust engine with id: shibboleth.CredentialTrustEngine
+12:35:18.364 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataExplicitKeyTrustEngineBeanDefinitionParser:48] - Parsing configuration for MetadataExplicitKey trust engine with id: shibboleth.CredentialMetadataExplictKeyTrustEngine
+12:35:18.366 - INFO [edu.internet2.middleware.shibboleth.common.config.security.MetadataPKIXX509CredentialTrustEngineBeanDefinitionParser:52] - Parsing configuration for MetadataPKIXX509Credential trust engine with id: shibboleth.CredentialMetadataPKIXTrustEngine
+12:35:18.368 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.ShibbolethSSOSecurityPolicy
+12:35:18.379 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1AttributeQuerySecurityPolicy
+12:35:18.388 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML1ArtifactResolutionSecurityPolicy
+12:35:18.392 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SSOSecurityPolicy
+12:35:18.400 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2AttributeQuerySecurityPolicy
+12:35:18.406 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2ArtifactResolutionSecurityPolicy
+12:35:18.412 - INFO [edu.internet2.middleware.shibboleth.common.config.security.ShibbolethSecurityPolicyBeanDefinitionParser:59] - Parsing configuration for SecurityPolicyType security policy with id: shibboleth.SAML2SLOSecurityPolicy
+12:35:19.195 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.RelyingPartyConfigurationManager service loaded new configuration
+12:35:19.211 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:158] - Loading new configuration for service shibboleth.HandlerManager
+12:35:19.261 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.JSPErrorHandlerBeanDefinitionParser:46] - Parsing configuration for JSP error handler.
+12:35:19.262 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: Status
+12:35:19.264 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAMLMetadata
+12:35:19.270 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: ShibbolethSSO
+12:35:19.272 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1AttributeQuery
+12:35:19.275 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML1ArtifactResolution
+12:35:19.279 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+12:35:19.280 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+12:35:19.281 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+12:35:19.282 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SSO
+12:35:19.284 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ECP
+12:35:19.286 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+12:35:19.287 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+12:35:19.288 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+12:35:19.289 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+12:35:19.290 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2SLO
+12:35:19.292 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2AttributeQuery
+12:35:19.294 - INFO [edu.internet2.middleware.shibboleth.common.config.profile.AbstractRequestURIMappedProfileHandlerBeanDefinitionParser:43] - Parsing configuration for profile handler: SAML2ArtifactResolution
+12:35:19.643 - INFO [edu.internet2.middleware.shibboleth.common.config.BaseService:180] - shibboleth.HandlerManager service loaded new configuration
+12:35:19.989 - INFO [Shibboleth-Access:73] - 20150504T043519Z|192.168.1.114|idp.edx.org:8080|/profile/Metadata/SAML|
+15:00:17.631 - INFO [Shibboleth-Access:73] - 20150504T070017Z|192.168.1.41|192.168.1.115:8080|/profile/SAML2/Redirect/SSO|
+15:00:17.680 - WARN [org.opensaml.common.binding.security.IssueInstantRule:108] - Message was expired: message issue time was '2015-05-04T03:02:24.000Z', message expired at: '2015-05-04T03:08:24.000Z', current time: '2015-05-04T15:00:17.680+08:00'
+15:00:17.684 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Message was rejected due to issue instant expiration
+	at org.opensaml.common.binding.security.IssueInstantRule.evaluate(IssueInstantRule.java:110) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+15:10:37.343 - INFO [Shibboleth-Access:73] - 20150504T071037Z|192.168.1.41|192.168.1.115:8080|/profile|
+15:10:37.344 - WARN [edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet:91] - No profile handler configured for request at path: null
+20:10:50.186 - INFO [Shibboleth-Access:73] - 20150504T121050Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:10:50.232 - ERROR [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:618] - No user identified by login handler.
+20:10:50.233 - ERROR [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:563] - Authentication failed with the error:
+edu.internet2.middleware.shibboleth.idp.authn.AuthenticationException: No user identified by login handler.
+	at edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine.validateSuccessfulAuthentication(AuthenticationEngine.java:619) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine.completeAuthentication(AuthenticationEngine.java:537) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine.service(AuthenticationEngine.java:225) [shibboleth-identityprovider-2.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine.forwardRequest(AuthenticationEngine.java:196) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine.returnToAuthenticationEngine(AuthenticationEngine.java:150) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.authn.provider.RemoteUserAuthServlet.service(RemoteUserAuthServlet.java:80) [shibboleth-identityprovider-2.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+20:10:50.237 - INFO [Shibboleth-Access:73] - 20150504T121050Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:10:50.287 - INFO [Shibboleth-Audit:1028] - 20150504T121050Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_99935f60f052851f797c8e9663346c5e|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|https://idp.edx.org/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_b062301d642fc820a3496db76bd6cb4f||||||

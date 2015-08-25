@@ -1,0 +1,4 @@
+00:17:08.541 - INFO [Shibboleth-Access:73] - 20150514T161708Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+00:17:17.866 - INFO [Shibboleth-Access:73] - 20150514T161717Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+00:17:17.906 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://os.edx.com/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://os.edx.com:8080/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+00:17:17.906 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://os.edx.com/shibboleth

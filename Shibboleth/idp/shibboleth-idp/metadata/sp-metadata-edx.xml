@@ -1,0 +1,45 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+
+entityID="http://east.cs.tsinghua.edu.cn/shibboleth">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol 
+
+urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIDDDCCAfSgAwIBAgIJAMvmqXhDErjyMA0GCSqGSIb3DQEBBQUAMCIxIDAeBgNV
+BAMTF2Vhc3QuY3MudHNpbmdodWEuZWR1LmNuMB4XDTE1MDYwNjAyMDgyOFoXDTI1
+MDYwMzAyMDgyOFowIjEgMB4GA1UEAxMXZWFzdC5jcy50c2luZ2h1YS5lZHUuY24w
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCrjri4vhENeYvx1AHd85C8
+6TiU06pOJDKufP4EB8zI4hBoU7KAD/ycXFcMOL1mPRROLXtZyeEj99M55/ZtIH0Q
+A4Qe5XC1rNUstXC9V6yABNAiT2p9GZX3CqAyw26+V87nWLIZFUDD91tF81NA4Fk1
+Dx67s0xo2RBZVjGPyQtqEBD1jLCWklpiG79d5nAJbmD4mJ8yCxz02jRCJ0ZLlCBB
+9c8B3han6MGtDEaSKau4j8ivsgCIs6zAjfo3zjahTr2Uw/Ojr1b/j2jI6/zYZSe7
+Dx6LNc5gey/V5d8RwjabA+JvZWbhydglw0aqmNiYCe1L7M5NzHJFgBASj3tqACed
+AgMBAAGjRTBDMCIGA1UdEQQbMBmCF2Vhc3QuY3MudHNpbmdodWEuZWR1LmNuMB0G
+A1UdDgQWBBTNIle87mjLpvEWYqFihkzEV/tTUzANBgkqhkiG9w0BAQUFAAOCAQEA
+J7f5Ojf1nnRiE9dTQcKNrQdE1VQCxCWNkhPrM45s02m6HtvArgLbfWkWXhplqd+w
+sNaoF1fOqUHnuA6kS3f8NcjfYA2JlW+AD/YDbRbLPfaXkoNVNy5GkfHRps0B41XT
+2ECaQKdVbGQkEdSmj3h+VONbzQWr+csjvu+P5JJvFN8UDO2+HKm2dO2pj05kaQFf
+Y1dkKPfCGNZ5KEoRqeBTzJ6Bz0+qXUmzgdarIrmYEgEVko/VcXAnFV3MMMQQaD4L
+XGyeQ7Wdn6CZc30YG90ezxkM2pHie7JSjypAPzALZuv2ijXrI3c/F+oYK+B8RBye
+4+LqK5HZrCsSKXkrUqIuWg==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" 
+
+Location="http://east.cs.tsinghua.edu.cn/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" 
+
+Location="http://east.cs.tsinghua.edu.cn/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" 
+
+Location="http://east.cs.tsinghua.edu.cn/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" 
+
+Location="http://east.cs.tsinghua.edu.cn/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>

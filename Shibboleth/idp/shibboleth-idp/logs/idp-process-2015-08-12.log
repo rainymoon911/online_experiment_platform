@@ -1,0 +1,5 @@
+15:42:13.143 - INFO [Shibboleth-Access:73] - 20150812T074213Z|211.68.3.15|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+15:42:36.649 - INFO [Shibboleth-Access:73] - 20150812T074236Z|211.68.3.15|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+15:42:36.985 - INFO [Shibboleth-Audit:1028] - 20150812T074236Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_6010730712b28947198c227cb1bd7e40|http://os.edx.com/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_427a664b6f2dbba32b9471d1ff7a403b|bitmoon|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_55f38aa1ee0e06a60e415231398a75ee||
+17:41:05.990 - INFO [Shibboleth-Access:73] - 20150812T094105Z|211.68.3.15|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+17:41:42.180 - INFO [Shibboleth-Access:73] - 20150812T094142Z|211.68.3.15|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|

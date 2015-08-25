@@ -1,0 +1,168 @@
+23:20:24.362 - INFO [Shibboleth-Access:73] - 20150511T152024Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:20:24.372 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:20:24.373 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:20:24.373 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:24:33.422 - INFO [Shibboleth-Access:73] - 20150511T152433Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:24:33.426 - WARN [org.opensaml.common.binding.security.MessageReplayRule:99] - Replay detected of message '_df380044a2ec60940fd5f9e68fd91825' from issuer http://os.edx.com/shibboleth
+23:24:33.427 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Rejecting replayed message ID '_df380044a2ec60940fd5f9e68fd91825' from issuer http://os.edx.com/shibboleth
+	at org.opensaml.common.binding.security.MessageReplayRule.evaluate(MessageReplayRule.java:100) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+23:28:51.938 - INFO [Shibboleth-Access:73] - 20150511T152851Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:28:51.986 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:28:51.989 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:28:51.992 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:33:25.239 - INFO [Shibboleth-Access:73] - 20150511T153325Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:33:25.290 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:33:25.293 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:33:25.296 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:33:36.894 - INFO [Shibboleth-Access:73] - 20150511T153336Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:33:36.899 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:33:36.900 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:33:36.900 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:50:56.280 - INFO [Shibboleth-Access:73] - 20150511T155056Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:50:56.336 - WARN [org.opensaml.common.binding.security.IssueInstantRule:108] - Message was expired: message issue time was '2015-05-11T15:33:07.000Z', message expired at: '2015-05-11T15:39:07.000Z', current time: '2015-05-11T23:50:56.336+08:00'
+23:50:56.348 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Message was rejected due to issue instant expiration
+	at org.opensaml.common.binding.security.IssueInstantRule.evaluate(IssueInstantRule.java:110) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+23:50:58.825 - INFO [Shibboleth-Access:73] - 20150511T155058Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:50:58.835 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:50:58.847 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:50:58.847 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:52:08.832 - INFO [Shibboleth-Access:73] - 20150511T155208Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:52:08.836 - WARN [org.opensaml.common.binding.security.MessageReplayRule:99] - Replay detected of message '_c41ce3ccffa0a79a608ad5f047db6ea4' from issuer http://os.edx.com/shibboleth
+23:52:08.837 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Rejecting replayed message ID '_c41ce3ccffa0a79a608ad5f047db6ea4' from issuer http://os.edx.com/shibboleth
+	at org.opensaml.common.binding.security.MessageReplayRule.evaluate(MessageReplayRule.java:100) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+23:52:14.608 - INFO [Shibboleth-Access:73] - 20150511T155214Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:52:14.614 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:52:14.615 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:52:14.616 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:52:36.199 - INFO [Shibboleth-Access:73] - 20150511T155236Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:52:36.203 - WARN [org.opensaml.common.binding.security.MessageReplayRule:99] - Replay detected of message '_0dfee65ae7e9a450dd28602f98dbb03b' from issuer http://os.edx.com/shibboleth
+23:52:36.205 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Rejecting replayed message ID '_0dfee65ae7e9a450dd28602f98dbb03b' from issuer http://os.edx.com/shibboleth
+	at org.opensaml.common.binding.security.MessageReplayRule.evaluate(MessageReplayRule.java:100) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]

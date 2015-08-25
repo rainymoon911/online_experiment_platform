@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth">
+
+    <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">edx.org</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDGDCCAgCgAwIBAgIVAKamnI+IMDkxA5V9R4pdkFRlyaYqMA0GCSqGSIb3DQEB
+BQUAMBYxFDASBgNVBAMMC2lkcC5lZHgub3JnMB4XDTE1MDUwMzAxMzcxNloXDTM1
+MDUwMzAxMzcxNlowFjEUMBIGA1UEAwwLaWRwLmVkeC5vcmcwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCLjrNOcr42bXs0eD8YHE2eAtdEK4zXJ3fTLw39
+Q34Ka3rFIHiWilR2VW00ZZNP7wZgFX5XmNKPIhZETkxgkhKpP2gOAHw1+Lcttxpd
+aX4r3bP+QNwvEy95hm6Ytd95NouTswYfjHt97IBYmyDIKtd9Zl1AHwGXPx3VVrrQ
+HT5OEWRRq4/aKv0uJVES6UNyyYQkKHvgumsrIPF3q4KpiAOOiq/HZz6pJGw3FeOo
+EiaeG0HTtPlrT/s05y/MAzqWbdSojCLykLVP/cNFYff+qPgzBv8liK7WZoi6bVwy
+H7FQhVGhX+bFxEQSi/7SnsQcYJGTMu/MUYaH8K1Jk3gdH9ttAgMBAAGjXTBbMB0G
+A1UdDgQWBBRL2feeYLZZ4bixs0bHY831nsbAgDA6BgNVHREEMzAxggtpZHAuZWR4
+Lm9yZ4YiaHR0cHM6Ly9pZHAuZWR4Lm9yZy9pZHAvc2hpYmJvbGV0aDANBgkqhkiG
+9w0BAQUFAAOCAQEAFXl+M1bz1UOjZgr72kbnWZzZnyFWCuc6PVxFyS0eZahu/UzW
+zj7mjTVSsNradcyd9ziZJnfFktccuf6EQWwVGbguALDb4vnLWIGIXr3F1IUAuA+X
+qet+SiYlhhRGR0C3OHzflOVIGi4KwDXL3opGi5BpCMrJQsYyNWaESHtAF+iqfJga
+o3UiOfKiEIGuGr+vRs5PsfXbcsVNdNAyUW5Z+ye7ueOaCbPuiooTUen7i/q45pLW
+duMiEpyO+797tYwVsXm11Td1TBMAD8CwsbbIKek+f48Arbsbodwy3lfpKS9//Gwu
+y9Mqwm0BU/n1A39Xnwr98IGPaUsnyVa+w9f4GQ==
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="http://idp.edx.org:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp.edx.org:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/SAML2/Redirect/SLO" />
+
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/SAML2/POST/SLO" />
+
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp.edx.org:8443/idp/profile/SAML2/SOAP/SLO" />
+
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+        <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/Shibboleth/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/SAML2/POST/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://solaris.cs.tsinghua.edu.cn:11154/idp/profile/SAML2/Redirect/SSO"/>
+    </IDPSSODescriptor>
+
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">edx.org</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDGDCCAgCgAwIBAgIVAKamnI+IMDkxA5V9R4pdkFRlyaYqMA0GCSqGSIb3DQEB
+BQUAMBYxFDASBgNVBAMMC2lkcC5lZHgub3JnMB4XDTE1MDUwMzAxMzcxNloXDTM1
+MDUwMzAxMzcxNlowFjEUMBIGA1UEAwwLaWRwLmVkeC5vcmcwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCLjrNOcr42bXs0eD8YHE2eAtdEK4zXJ3fTLw39
+Q34Ka3rFIHiWilR2VW00ZZNP7wZgFX5XmNKPIhZETkxgkhKpP2gOAHw1+Lcttxpd
+aX4r3bP+QNwvEy95hm6Ytd95NouTswYfjHt97IBYmyDIKtd9Zl1AHwGXPx3VVrrQ
+HT5OEWRRq4/aKv0uJVES6UNyyYQkKHvgumsrIPF3q4KpiAOOiq/HZz6pJGw3FeOo
+EiaeG0HTtPlrT/s05y/MAzqWbdSojCLykLVP/cNFYff+qPgzBv8liK7WZoi6bVwy
+H7FQhVGhX+bFxEQSi/7SnsQcYJGTMu/MUYaH8K1Jk3gdH9ttAgMBAAGjXTBbMB0G
+A1UdDgQWBBRL2feeYLZZ4bixs0bHY831nsbAgDA6BgNVHREEMzAxggtpZHAuZWR4
+Lm9yZ4YiaHR0cHM6Ly9pZHAuZWR4Lm9yZy9pZHAvc2hpYmJvbGV0aDANBgkqhkiG
+9w0BAQUFAAOCAQEAFXl+M1bz1UOjZgr72kbnWZzZnyFWCuc6PVxFyS0eZahu/UzW
+zj7mjTVSsNradcyd9ziZJnfFktccuf6EQWwVGbguALDb4vnLWIGIXr3F1IUAuA+X
+qet+SiYlhhRGR0C3OHzflOVIGi4KwDXL3opGi5BpCMrJQsYyNWaESHtAF+iqfJga
+o3UiOfKiEIGuGr+vRs5PsfXbcsVNdNAyUW5Z+ye7ueOaCbPuiooTUen7i/q45pLW
+duMiEpyO+797tYwVsXm11Td1TBMAD8CwsbbIKek+f48Arbsbodwy3lfpKS9//Gwu
+y9Mqwm0BU/n1A39Xnwr98IGPaUsnyVa+w9f4GQ==
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="http://idp.edx.org:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp.edx.org:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+    </AttributeAuthorityDescriptor>
+
+</EntityDescriptor>

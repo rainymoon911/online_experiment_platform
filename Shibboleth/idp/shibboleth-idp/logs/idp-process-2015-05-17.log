@@ -1,0 +1,6 @@
+10:35:53.985 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+10:35:56.566 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+10:49:23.491 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+10:49:57.302 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+11:05:11.224 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+11:05:41.836 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.

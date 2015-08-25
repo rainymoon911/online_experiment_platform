@@ -1,0 +1,33 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://sp.edx.org/shibboleth">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIC5TCCAc2gAwIBAgIJAIuqrO6Rgmh/MA0GCSqGSIb3DQEBBQUAMBUxEzARBgNV
+BAMTCnNwLmVkeC5vcmcwHhcNMTUwNTA0MDIyOTMyWhcNMjUwNTAxMDIyOTMyWjAV
+MRMwEQYDVQQDEwpzcC5lZHgub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAt/fYhRl07csgoZ0GzQRS4Vkhb/DVD2Iy1HFJEL5IIlVB5EVQYYGJMYNW
+/+OYa32+lrYZYrg5nJIcAuOAukL1aQvRWyDDKu+nqnDgVYzth4o0kHJ2Um9sM0IF
+TPPsRs1LwLzdt4HS1zDEtBecn7xeCIN+lOG1i5LW1ZWlQUQtBD+oV3GC1IJcCCEA
+A7dfxOqxCuERnJKM+3zf3f5Y6k4nvBH3AJqWHvB2lEByx1C0TeTfd9ixpgN6j38U
+gY/uoH3dxymRI0n0bw/jo0svptAt6sjMc9FwujrW/UkOPQlaXRiIuMoSopm3FiU9
+Xy9NYbuEOGX6Y5Z8//H7OKmxqkyfIwIDAQABozgwNjAVBgNVHREEDjAMggpzcC5l
+ZHgub3JnMB0GA1UdDgQWBBRV1CTxcPBfopmejCU15RVKB3q2DDANBgkqhkiG9w0B
+AQUFAAOCAQEAoQZzndIuUlXvCQ/3TYWyk6fJL6HjsokQI8f94Ao1J2YN68HJKXGF
+IaET2VDiRMke+KD1+MH593v+gX29E5FYh1O7DW8Cxy7KKiHg4Xg7TUCRnx7W9Z72
+/fqe410RTr/AA2Rz33InPLL0ysjCisjBbMEov0n54Xewg134zUjR+2u4tAT8JSH7
+A0CySrRNgqTzxKJNjJGJOPERvNF4UWSU8ssx1Xy7W46Fv5aKxA9IjqHzJ3GtFTZO
+o7yZV1tZJfyR+O06ofSlX+zuzpUH9JoKktB2Gh/E5f8WY/H/5cUTd8zSYq21hNt4
+Eh4uzcZyNPo9UtA9DWDZt1/0YGMLRprl2A==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://sp.edx.org/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://sp.edx.org/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="http://sp.edx.org/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="http://sp.edx.org/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
+

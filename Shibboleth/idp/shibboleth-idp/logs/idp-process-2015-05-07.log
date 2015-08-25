@@ -1,0 +1,545 @@
+
+10:48:18.981 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:18.987 - INFO [Shibboleth-Access:73] - 20150507T024818Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+10:48:18.992 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+10:48:18.992 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+10:48:18.993 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:339] - LoginContext key cookie was not present in request
+10:48:18.993 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:188] - Incoming request does not contain a login context, processing as first leg of request
+10:48:18.994 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:366] - Decoding message with decoder binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+10:48:19.033 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:48:19.034 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:48:19.034 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:48:19.039 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:387] - Decoded request from relying party 'http://sp.edx.org/shibboleth'
+10:48:19.039 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:48:19.040 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:48:19.040 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:48:19.040 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:226] - Creating login context and transferring control to authentication engine
+10:48:19.045 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:181] - Storing LoginContext to StorageService partition loginContexts, key 1d979239b60a56f21a033fdde8813fc74245676c084873b803ccc40289e01eae
+10:48:19.046 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:240] - Redirecting user to authentication engine at http://idp.edx.org:8080/idp/AuthnEngine
+10:48:19.058 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:19.059 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+10:48:19.059 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:240] - Beginning user authentication process.
+10:48:19.060 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:283] - Filtering configured LoginHandlers: {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:19.060 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:385] - Forced authentication is required, filtering possible login handlers accordingly
+10:48:19.060 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:406] - Authentication handlers remaining after forced authentication requirement filtering: {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:19.061 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:464] - Selecting appropriate login handler from filtered set {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:19.061 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:497] - Authenticating user with login handler of type edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler
+10:48:19.061 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler:66] - Redirecting to http://idp.edx.org:8080/idp/Authn/UserPassword
+10:48:19.065 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:19.201 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:150] - Redirecting to login page /login.jsp
+10:48:19.238 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:19.242 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:26.735 - DEBUG [edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter:180] - No session associated with session ID d8d206d35a6bf9c8e0d7d50fbbdc9f3d3ea18e391321ba445fa3390024066152 - session must have timed out
+10:48:26.736 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:170] - Attempting to authenticate user zyu
+10:48:26.797 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:178] - Successfully authenticated user zyu
+10:48:26.799 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:144] - Returning control to authentication engine
+10:48:26.800 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+10:48:26.800 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:514] - Completing user authentication process
+10:48:26.800 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:585] - Validating authentication was performed successfully
+10:48:26.801 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:696] - Updating session information for principal zyu
+10:48:26.801 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:700] - Creating shibboleth session for principal zyu
+10:48:26.805 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:815] - Adding IdP session cookie to HTTP response
+10:48:26.806 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:715] - Recording authentication and service information in Shibboleth session for principal: zyu
+10:48:26.809 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:560] - User zyu authenticated with method urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport
+10:48:26.809 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:161] - Returning control to profile handler
+10:48:26.810 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:177] - Redirecting user to profile handler at http://idp.edx.org:8080/idp/profile/SAML2/Redirect/SSO
+10:48:26.814 - INFO [Shibboleth-Access:73] - 20150507T024826Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+10:48:26.815 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+10:48:26.815 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+10:48:26.816 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:588] - Unbinding LoginContext
+10:48:26.816 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:614] - Expiring LoginContext cookie
+10:48:26.816 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:625] - Removed LoginContext, with key 1d979239b60a56f21a033fdde8813fc74245676c084873b803ccc40289e01eae, from StorageService partition loginContexts
+10:48:26.817 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:172] - Incoming request contains a login context and indicates principal was authenticated, processing second leg of request
+10:48:26.817 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:48:26.818 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:48:26.818 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:48:26.825 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:478] - Resolving attributes for principal 'zyu' for SAML request from relying party 'http://sp.edx.org/shibboleth'
+10:48:26.827 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:119] - shibboleth.AttributeResolver resolving attributes for principal zyu
+10:48:26.828 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:275] - Specific attributes for principal zyu were not requested, resolving all attributes.
+10:48:26.828 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute uid for principal zyu
+10:48:26.830 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:354] - Resolving data connector myLDAP for principal zyu
+10:48:26.859 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:308] - Search filter: (uid=zyu)
+10:48:26.860 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:363] - LDAP data connector myLDAP - Retrieving attributes from LDAP
+10:48:26.878 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: uid[zyu]
+10:48:26.879 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: mail[zhangrain911@163.com]
+10:48:26.880 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: sn[yu]
+10:48:26.881 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: cn[z yu]
+10:48:26.881 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: userPassword[e01ENX1JdkMwSXhVWVNrWEprWUdtVW9sd3hRPT0=]
+10:48:26.882 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: entryDN[cn=z yu,ou=Users,dc=openedx,dc=com]
+10:48:26.882 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: gidNumber[500]
+10:48:26.883 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: uidNumber[1000]
+10:48:26.883 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: objectClass[posixAccount, inetOrgPerson, top]
+10:48:26.884 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: givenName[z]
+10:48:26.884 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: homeDirectory[/home/users/zyu]
+10:48:26.885 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: loginShell[/bin/sh]
+10:48:26.885 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute uid containing 1 values
+10:48:26.886 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute commonName for principal zyu
+10:48:26.886 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute commonName containing 1 values
+10:48:26.886 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute email for principal zyu
+10:48:26.887 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute email containing 1 values
+10:48:26.887 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute transientId for principal zyu
+10:48:26.887 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:97] - Building transient ID for request _3c490f9824c6b2fc9d0924e81430fe63; outbound message issuer: http://idp.edx.org:8080/idp/shibboleth, inbound message issuer: http://sp.edx.org/shibboleth, principal identifer: zyu
+10:48:26.889 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:115] - Created transient ID _15c43346b6e5b2a68517acbbf98512b9 for request _3c490f9824c6b2fc9d0924e81430fe63
+10:48:26.890 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute transientId containing 1 values
+10:48:26.890 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute uid has 1 values after post-processing
+10:48:26.891 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute commonName has 1 values after post-processing
+10:48:26.892 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute email has 1 values after post-processing
+10:48:26.892 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute transientId has 1 values after post-processing
+10:48:26.893 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:137] - shibboleth.AttributeResolver resolved, for principal zyu, the attributes: [uid, commonName, email, transientId]
+10:48:26.893 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:71] - shibboleth.AttributeFilterEngine filtering 4 attributes for principal zyu
+10:48:26.895 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:130] - Evaluating if filter policy releaseTransientIdToAnyone is active for principal zyu
+10:48:26.896 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:139] - Filter policy releaseTransientIdToAnyone is active for principal zyu
+10:48:26.897 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute transientId for principal zyu
+10:48:26.897 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute uid for principal zyu
+10:48:26.897 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute email for principal zyu
+10:48:26.898 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute commonName for principal zyu
+10:48:26.898 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute uid has 1 values after filtering
+10:48:26.898 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute commonName has 1 values after filtering
+10:48:26.899 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute email has 1 values after filtering
+10:48:26.899 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute transientId has 1 values after filtering
+10:48:26.899 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:114] - Filtered attributes for principal zyu.  The following attributes remain: [uid, commonName, email, transientId]
+10:48:26.903 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:505] - Creating attribute statement in response to SAML request '_3c490f9824c6b2fc9d0924e81430fe63' from relying party 'http://sp.edx.org/shibboleth'
+10:48:26.906 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute uid with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:48:26.906 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute commonName with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:48:26.907 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute email with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:48:26.907 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:263] - Attribute transientId was not encoded (filtered by query, or no SAML2AttributeEncoder attached).
+10:48:26.939 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:527] - Filtering out potential name identifier attributes which can not be encoded by edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.941 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute uid, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.942 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute commonName, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.943 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute email, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.943 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:541] - Retaining attribute transientId which may be encoded to via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.944 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:690] - Selecting attribute to be encoded as a name identifier by encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:48:26.945 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:717] - Selecting the first attribute that can be encoded in to a name identifier
+10:48:26.947 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:501] - Name identifier for relying party 'http://sp.edx.org/shibboleth' will be built from attribute 'transientId'
+10:48:26.948 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:868] - Using attribute 'transientId' supporting NameID format 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient' to create the NameID for relying party 'http://sp.edx.org/shibboleth'
+10:48:26.949 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:572] - Determining if SAML assertion to relying party 'http://sp.edx.org/shibboleth' should be signed
+10:48:26.950 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:653] - IdP relying party configuration 'default' indicates to sign assertions: true
+10:48:26.950 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:583] - Determining signing credntial for assertion to relying party 'http://sp.edx.org/shibboleth'
+10:48:26.950 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:599] - Signing assertion to relying party http://sp.edx.org/shibboleth
+10:48:27.037 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:274] - Attempting to encrypt assertion to relying party 'http://sp.edx.org/shibboleth'
+10:48:27.044 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:279] - Assertion to be encrypted is:
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2:Assertion ID="_828a04944e9a9022979a775de05133b5"
+    IssueInstant="2015-05-07T02:48:26.908Z" Version="2.0"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">http://idp.edx.org:8080/idp/shibboleth</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#_828a04944e9a9022979a775de05133b5">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="xs" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>RQlmcxCHOPxSsrdhE93N6Qp/fTw=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>Ad3tL4bkD3wXXQAz/sa59fevXeezp6gKg7tTMSDBdmMWJUn2KH+94FKN0H1W6ggfPTnRwx9ZAGC+KXtF4F34GO+wY3F6ImAbvwq0oTT67lDtR14XqFD2aRx/uc3JZ5VdcYbh6yEHK+S7Yt/RtVDgqbpWv/PKMRkFRMQfR/XhTAFriSbrC/EwdwC0yvxvrHsSLFkXjadT1vLwNRM81KTv6erzSzwCDed+AuIYNxIGC5Gt+SX51zcA51sDmCFWxkU40kJ7V4rOEi2ADu0mdrMOZ9Au69JvTb78qRYBZu2wk8bLvhEpS3kXVpdKqUMfXamHEJ/t6asrbIh/2SXK9VXLtw==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDGDCCAgCgAwIBAgIVAKamnI+IMDkxA5V9R4pdkFRlyaYqMA0GCSqGSIb3DQEBBQUAMBYxFDAS
+BgNVBAMMC2lkcC5lZHgub3JnMB4XDTE1MDUwMzAxMzcxNloXDTM1MDUwMzAxMzcxNlowFjEUMBIG
+A1UEAwwLaWRwLmVkeC5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCLjrNOcr42
+bXs0eD8YHE2eAtdEK4zXJ3fTLw39Q34Ka3rFIHiWilR2VW00ZZNP7wZgFX5XmNKPIhZETkxgkhKp
+P2gOAHw1+LcttxpdaX4r3bP+QNwvEy95hm6Ytd95NouTswYfjHt97IBYmyDIKtd9Zl1AHwGXPx3V
+VrrQHT5OEWRRq4/aKv0uJVES6UNyyYQkKHvgumsrIPF3q4KpiAOOiq/HZz6pJGw3FeOoEiaeG0HT
+tPlrT/s05y/MAzqWbdSojCLykLVP/cNFYff+qPgzBv8liK7WZoi6bVwyH7FQhVGhX+bFxEQSi/7S
+nsQcYJGTMu/MUYaH8K1Jk3gdH9ttAgMBAAGjXTBbMB0GA1UdDgQWBBRL2feeYLZZ4bixs0bHY831
+nsbAgDA6BgNVHREEMzAxggtpZHAuZWR4Lm9yZ4YiaHR0cHM6Ly9pZHAuZWR4Lm9yZy9pZHAvc2hp
+YmJvbGV0aDANBgkqhkiG9w0BAQUFAAOCAQEAFXl+M1bz1UOjZgr72kbnWZzZnyFWCuc6PVxFyS0e
+Zahu/UzWzj7mjTVSsNradcyd9ziZJnfFktccuf6EQWwVGbguALDb4vnLWIGIXr3F1IUAuA+Xqet+
+SiYlhhRGR0C3OHzflOVIGi4KwDXL3opGi5BpCMrJQsYyNWaESHtAF+iqfJgao3UiOfKiEIGuGr+v
+Rs5PsfXbcsVNdNAyUW5Z+ye7ueOaCbPuiooTUen7i/q45pLWduMiEpyO+797tYwVsXm11Td1TBMA
+D8CwsbbIKek+f48Arbsbodwy3lfpKS9//Gwuy9Mqwm0BU/n1A39Xnwr98IGPaUsnyVa+w9f4GQ==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+        <saml2:NameID
+            Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+            NameQualifier="http://idp.edx.org:8080/idp/shibboleth" SPNameQualifier="http://sp.edx.org/shibboleth">_15c43346b6e5b2a68517acbbf98512b9</saml2:NameID>
+        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <saml2:SubjectConfirmationData Address="192.168.1.114"
+                InResponseTo="_3c490f9824c6b2fc9d0924e81430fe63"
+                NotOnOrAfter="2015-05-07T02:53:26.908Z" Recipient="http://sp.edx.org/Shibboleth.sso/SAML2/POST"/>
+        </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2015-05-07T02:48:26.908Z" NotOnOrAfter="2015-05-07T02:53:26.908Z">
+        <saml2:AudienceRestriction>
+            <saml2:Audience>http://sp.edx.org/shibboleth</saml2:Audience>
+        </saml2:AudienceRestriction>
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2015-05-07T02:48:26.801Z" SessionIndex="_0209e46a9abf6b1bbfe1049aea5062fe">
+        <saml2:SubjectLocality Address="192.168.1.114"/>
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute FriendlyName="uid"
+            Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">zyu</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">z yu</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute FriendlyName="mail"
+            Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">zhangrain911@163.com</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>
+
+10:48:27.184 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:331] - secondarily indexing user session by name identifier
+10:48:27.185 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:796] - Encoding response to SAML request _3c490f9824c6b2fc9d0924e81430fe63 from relying party http://sp.edx.org/shibboleth
+10:48:27.221 - INFO [Shibboleth-Audit:1028] - 20150507T024827Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_3c490f9824c6b2fc9d0924e81430fe63|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_402bf414c13550bc95627a66bca19ab0|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_15c43346b6e5b2a68517acbbf98512b9||
+10:48:51.954 - INFO [Shibboleth-Access:73] - 20150507T024851Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+10:48:51.954 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+10:48:51.955 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+10:48:51.955 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:339] - LoginContext key cookie was not present in request
+10:48:51.955 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:188] - Incoming request does not contain a login context, processing as first leg of request
+10:48:51.955 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:366] - Decoding message with decoder binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
+10:48:51.958 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:48:51.959 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:48:51.959 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:48:51.960 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:387] - Decoded request from relying party 'http://sp.edx.org/shibboleth'
+10:48:51.960 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:48:51.961 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:48:51.961 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:48:51.961 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:226] - Creating login context and transferring control to authentication engine
+10:48:51.963 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:181] - Storing LoginContext to StorageService partition loginContexts, key 1a828c6e344705be02fecd148e680e978e6b69cc5f69e96ce849edbdc13899c2
+10:48:51.963 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:240] - Redirecting user to authentication engine at http://idp.edx.org:8080/idp/AuthnEngine
+10:48:51.967 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+10:48:51.967 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:240] - Beginning user authentication process.
+10:48:51.968 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:244] - Existing IdP session available for principal zyu
+10:48:51.968 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:283] - Filtering configured LoginHandlers: {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:51.968 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:385] - Forced authentication is required, filtering possible login handlers accordingly
+10:48:51.969 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:406] - Authentication handlers remaining after forced authentication requirement filtering: {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:51.969 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:464] - Selecting appropriate login handler from filtered set {urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport=edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler@3935effd}
+10:48:51.969 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:497] - Authenticating user with login handler of type edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler
+10:48:51.969 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginHandler:66] - Redirecting to http://idp.edx.org:8080/idp/Authn/UserPassword
+10:48:51.977 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:150] - Redirecting to login page /login.jsp
+10:49:04.866 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:170] - Attempting to authenticate user zyu
+10:49:04.882 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet:178] - Successfully authenticated user zyu
+10:49:04.883 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:144] - Returning control to authentication engine
+10:49:04.883 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:209] - Processing incoming request
+10:49:04.884 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:514] - Completing user authentication process
+10:49:04.884 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:585] - Validating authentication was performed successfully
+10:49:04.885 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:696] - Updating session information for principal zyu
+10:49:04.885 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:715] - Recording authentication and service information in Shibboleth session for principal: zyu
+10:49:04.885 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:560] - User zyu authenticated with method urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport
+10:49:04.886 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:161] - Returning control to profile handler
+10:49:04.886 - DEBUG [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:177] - Redirecting user to profile handler at http://idp.edx.org:8080/idp/profile/SAML2/Redirect/SSO
+10:49:04.926 - INFO [Shibboleth-Access:73] - 20150507T024904Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+10:49:04.926 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:86] - shibboleth.HandlerManager: Looking up profile handler for request path: /SAML2/Redirect/SSO
+10:49:04.926 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager:97] - shibboleth.HandlerManager: Located profile handler of the following type for the request path: edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler
+10:49:04.927 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:588] - Unbinding LoginContext
+10:49:04.927 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:614] - Expiring LoginContext cookie
+10:49:04.927 - DEBUG [edu.internet2.middleware.shibboleth.idp.util.HttpServletHelper:625] - Removed LoginContext, with key 1a828c6e344705be02fecd148e680e978e6b69cc5f69e96ce849edbdc13899c2, from StorageService partition loginContexts
+10:49:04.928 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:172] - Incoming request contains a login context and indicates principal was authenticated, processing second leg of request
+10:49:04.928 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:128] - Looking up relying party configuration for http://sp.edx.org/shibboleth
+10:49:04.928 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:134] - No custom relying party configuration found for http://sp.edx.org/shibboleth, looking up configuration based on metadata groups.
+10:49:04.929 - DEBUG [edu.internet2.middleware.shibboleth.common.relyingparty.provider.SAMLMDRelyingPartyConfigurationManager:157] - No custom or group-based relying party configuration found for http://sp.edx.org/shibboleth. Using default relying party configuration.
+10:49:04.932 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:478] - Resolving attributes for principal 'zyu' for SAML request from relying party 'http://sp.edx.org/shibboleth'
+10:49:04.932 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:119] - shibboleth.AttributeResolver resolving attributes for principal zyu
+10:49:04.933 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:275] - Specific attributes for principal zyu were not requested, resolving all attributes.
+10:49:04.933 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute uid for principal zyu
+10:49:04.933 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:354] - Resolving data connector myLDAP for principal zyu
+10:49:04.935 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:308] - Search filter: (uid=zyu)
+10:49:04.935 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:363] - LDAP data connector myLDAP - Retrieving attributes from LDAP
+10:49:04.945 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: uid[zyu]
+10:49:04.946 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: mail[zhangrain911@163.com]
+10:49:04.947 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: sn[yu]
+10:49:04.947 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: cn[z yu]
+10:49:04.948 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: userPassword[e01ENX1JdkMwSXhVWVNrWEprWUdtVW9sd3hRPT0=]
+10:49:04.948 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: entryDN[cn=z yu,ou=Users,dc=openedx,dc=com]
+10:49:04.949 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: gidNumber[500]
+10:49:04.949 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: uidNumber[1000]
+10:49:04.950 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: objectClass[posixAccount, inetOrgPerson, top]
+10:49:04.950 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: givenName[z]
+10:49:04.951 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: homeDirectory[/home/users/zyu]
+10:49:04.951 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.dataConnector.LdapDataConnector:414] - LDAP data connector myLDAP - Found the following attribute: loginShell[/bin/sh]
+10:49:04.952 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute uid containing 1 values
+10:49:04.952 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute commonName for principal zyu
+10:49:04.952 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute commonName containing 1 values
+10:49:04.953 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute email for principal zyu
+10:49:04.953 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute email containing 1 values
+10:49:04.953 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:314] - Resolving attribute transientId for principal zyu
+10:49:04.954 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:97] - Building transient ID for request _07de90cc1379efac94d308a965ef8b08; outbound message issuer: http://idp.edx.org:8080/idp/shibboleth, inbound message issuer: http://sp.edx.org/shibboleth, principal identifer: zyu
+10:49:04.954 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.attributeDefinition.TransientIdAttributeDefinition:115] - Created transient ID _15c43346b6e5b2a68517acbbf98512b9 for request _07de90cc1379efac94d308a965ef8b08
+10:49:04.954 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:336] - Resolved attribute transientId containing 1 values
+10:49:04.955 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute uid has 1 values after post-processing
+10:49:04.955 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute commonName has 1 values after post-processing
+10:49:04.955 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute email has 1 values after post-processing
+10:49:04.956 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:473] - Attribute transientId has 1 values after post-processing
+10:49:04.956 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.resolver.provider.ShibbolethAttributeResolver:137] - shibboleth.AttributeResolver resolved, for principal zyu, the attributes: [uid, commonName, email, transientId]
+10:49:04.956 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:71] - shibboleth.AttributeFilterEngine filtering 4 attributes for principal zyu
+10:49:04.957 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:130] - Evaluating if filter policy releaseTransientIdToAnyone is active for principal zyu
+10:49:04.957 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:139] - Filter policy releaseTransientIdToAnyone is active for principal zyu
+10:49:04.957 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute transientId for principal zyu
+10:49:04.958 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute uid for principal zyu
+10:49:04.958 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute email for principal zyu
+10:49:04.958 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:163] - Processing permit value rule for attribute commonName for principal zyu
+10:49:04.959 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute uid has 1 values after filtering
+10:49:04.959 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute commonName has 1 values after filtering
+10:49:04.959 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute email has 1 values after filtering
+10:49:04.960 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:109] - Attribute transientId has 1 values after filtering
+10:49:04.960 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.filtering.provider.ShibbolethAttributeFilteringEngine:114] - Filtered attributes for principal zyu.  The following attributes remain: [uid, commonName, email, transientId]
+10:49:04.960 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:505] - Creating attribute statement in response to SAML request '_07de90cc1379efac94d308a965ef8b08' from relying party 'http://sp.edx.org/shibboleth'
+10:49:04.961 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute uid with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:49:04.961 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute commonName with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:49:04.962 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:247] - Encoded attribute email with encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.provider.SAML2StringAttributeEncoder
+10:49:04.962 - DEBUG [edu.internet2.middleware.shibboleth.common.attribute.provider.ShibbolethSAML2AttributeAuthority:263] - Attribute transientId was not encoded (filtered by query, or no SAML2AttributeEncoder attached).
+10:49:04.963 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:527] - Filtering out potential name identifier attributes which can not be encoded by edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.964 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute uid, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.964 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute commonName, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.964 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:546] - Removing attribute email, it can not be encoded via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.965 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:541] - Retaining attribute transientId which may be encoded to via edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.965 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:690] - Selecting attribute to be encoded as a name identifier by encoder of type edu.internet2.middleware.shibboleth.common.attribute.encoding.SAML2NameIDEncoder
+10:49:04.965 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:717] - Selecting the first attribute that can be encoded in to a name identifier
+10:49:04.965 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:501] - Name identifier for relying party 'http://sp.edx.org/shibboleth' will be built from attribute 'transientId'
+10:49:04.966 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:868] - Using attribute 'transientId' supporting NameID format 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient' to create the NameID for relying party 'http://sp.edx.org/shibboleth'
+10:49:04.966 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:572] - Determining if SAML assertion to relying party 'http://sp.edx.org/shibboleth' should be signed
+10:49:04.966 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:653] - IdP relying party configuration 'default' indicates to sign assertions: true
+10:49:04.966 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:583] - Determining signing credntial for assertion to relying party 'http://sp.edx.org/shibboleth'
+10:49:04.967 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:599] - Signing assertion to relying party http://sp.edx.org/shibboleth
+10:49:05.006 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:274] - Attempting to encrypt assertion to relying party 'http://sp.edx.org/shibboleth'
+10:49:05.013 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.AbstractSAML2ProfileHandler:279] - Assertion to be encrypted is:
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2:Assertion ID="_821cf165a74655485c296221f1bb70b1"
+    IssueInstant="2015-05-07T02:49:04.963Z" Version="2.0"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">http://idp.edx.org:8080/idp/shibboleth</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#_821cf165a74655485c296221f1bb70b1">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="xs" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>ivOkXsTuze4DoDhVj7qjKYqLueg=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>Vjp773Z6ab5mF5otRFqTPNvPJUE7Bha/s4tQRflyPD260GdO443bBkoLSMY/wu0vMB6KoLF/QX55mUQ91ITfzGdr/uLrW3yqsKO2Wa5TgghnuizDqae7Xf2l5RfhRx5AJH5G+bxqlNM7ZiZ29/s/S48sgzBS6GMWgM/6NoA2VfCVvDCe7vF7p8s2JFoz8z/Xf4thFT/C5NQIfQmTXPqjvkeWsAL2p5F0WgV1hVG7aHuNZKo753gIUdXSRR3lvfv8EcL2ehR7VFsnPZCnCehUHvn7UwYqHpVS7D6L0RsTq8LmqLBt4akW0mHy1GQs/uvPyvwNA5g/Vxv8pK9mnnEWGA==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDGDCCAgCgAwIBAgIVAKamnI+IMDkxA5V9R4pdkFRlyaYqMA0GCSqGSIb3DQEBBQUAMBYxFDAS
+BgNVBAMMC2lkcC5lZHgub3JnMB4XDTE1MDUwMzAxMzcxNloXDTM1MDUwMzAxMzcxNlowFjEUMBIG
+A1UEAwwLaWRwLmVkeC5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCLjrNOcr42
+bXs0eD8YHE2eAtdEK4zXJ3fTLw39Q34Ka3rFIHiWilR2VW00ZZNP7wZgFX5XmNKPIhZETkxgkhKp
+P2gOAHw1+LcttxpdaX4r3bP+QNwvEy95hm6Ytd95NouTswYfjHt97IBYmyDIKtd9Zl1AHwGXPx3V
+VrrQHT5OEWRRq4/aKv0uJVES6UNyyYQkKHvgumsrIPF3q4KpiAOOiq/HZz6pJGw3FeOoEiaeG0HT
+tPlrT/s05y/MAzqWbdSojCLykLVP/cNFYff+qPgzBv8liK7WZoi6bVwyH7FQhVGhX+bFxEQSi/7S
+nsQcYJGTMu/MUYaH8K1Jk3gdH9ttAgMBAAGjXTBbMB0GA1UdDgQWBBRL2feeYLZZ4bixs0bHY831
+nsbAgDA6BgNVHREEMzAxggtpZHAuZWR4Lm9yZ4YiaHR0cHM6Ly9pZHAuZWR4Lm9yZy9pZHAvc2hp
+YmJvbGV0aDANBgkqhkiG9w0BAQUFAAOCAQEAFXl+M1bz1UOjZgr72kbnWZzZnyFWCuc6PVxFyS0e
+Zahu/UzWzj7mjTVSsNradcyd9ziZJnfFktccuf6EQWwVGbguALDb4vnLWIGIXr3F1IUAuA+Xqet+
+SiYlhhRGR0C3OHzflOVIGi4KwDXL3opGi5BpCMrJQsYyNWaESHtAF+iqfJgao3UiOfKiEIGuGr+v
+Rs5PsfXbcsVNdNAyUW5Z+ye7ueOaCbPuiooTUen7i/q45pLWduMiEpyO+797tYwVsXm11Td1TBMA
+D8CwsbbIKek+f48Arbsbodwy3lfpKS9//Gwuy9Mqwm0BU/n1A39Xnwr98IGPaUsnyVa+w9f4GQ==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+        <saml2:NameID
+            Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+            NameQualifier="http://idp.edx.org:8080/idp/shibboleth" SPNameQualifier="http://sp.edx.org/shibboleth">_15c43346b6e5b2a68517acbbf98512b9</saml2:NameID>
+        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <saml2:SubjectConfirmationData Address="192.168.1.114"
+                InResponseTo="_07de90cc1379efac94d308a965ef8b08"
+                NotOnOrAfter="2015-05-07T02:54:04.963Z" Recipient="http://sp.edx.org/Shibboleth.sso/SAML2/POST"/>
+        </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2015-05-07T02:49:04.963Z" NotOnOrAfter="2015-05-07T02:54:04.963Z">
+        <saml2:AudienceRestriction>
+            <saml2:Audience>http://sp.edx.org/shibboleth</saml2:Audience>
+        </saml2:AudienceRestriction>
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2015-05-07T02:49:04.884Z" SessionIndex="_cd41252796283bc095bef9dfc17a1077">
+        <saml2:SubjectLocality Address="192.168.1.114"/>
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute FriendlyName="uid"
+            Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">zyu</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute FriendlyName="cn" Name="urn:oid:2.5.4.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">z yu</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute FriendlyName="mail"
+            Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">zhangrain911@163.com</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>
+
+10:49:05.027 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:331] - secondarily indexing user session by name identifier
+10:49:05.027 - DEBUG [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:796] - Encoding response to SAML request _07de90cc1379efac94d308a965ef8b08 from relying party http://sp.edx.org/shibboleth
+10:49:05.045 - INFO [Shibboleth-Audit:1028] - 20150507T024905Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_07de90cc1379efac94d308a965ef8b08|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_1c074be00c473d96ee044d5718226273|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_15c43346b6e5b2a68517acbbf98512b9||
+15:36:30.180 - INFO [Shibboleth-Access:73] - 20150507T073630Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+15:36:32.635 - INFO [Shibboleth-Access:73] - 20150507T073632Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+15:36:33.001 - INFO [Shibboleth-Audit:1028] - 20150507T073633Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_cfe128c25e05c8511306c98584beaffe|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_1dec8ca0cfde283ebff00f8829610196|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:07:50.234 - INFO [Shibboleth-Access:73] - 20150507T080750Z|192.168.1.114|idp.edx.org:8080|/profile/Status|
+16:07:50.235 - WARN [edu.internet2.middleware.shibboleth.idp.profile.StatusProfileHandler:43] - This profile handler has been deprecated, use the Status servlet usually located at '/idp/status'
+16:08:00.440 - INFO [Shibboleth-Access:73] - 20150507T080800Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:08:02.353 - INFO [Shibboleth-Access:73] - 20150507T080802Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:08:02.448 - INFO [Shibboleth-Audit:1028] - 20150507T080802Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_c00cfbf05f2f404828f4e4aa54bdfe5b|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_1fb28889f640e5706a9efed6aeb453da|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:11:00.719 - INFO [Shibboleth-Access:73] - 20150507T081100Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:11:02.291 - INFO [Shibboleth-Access:73] - 20150507T081102Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:11:02.374 - INFO [Shibboleth-Audit:1028] - 20150507T081102Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_0f10dd29ca0fdd1fc1c0792bb37bb492|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_0e33e1b638522ce7a67eca2bc42fe15b|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:12:19.298 - INFO [Shibboleth-Access:73] - 20150507T081219Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:12:20.620 - INFO [Shibboleth-Access:73] - 20150507T081220Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:12:20.694 - INFO [Shibboleth-Audit:1028] - 20150507T081220Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_5dddd3ade1c9d6f56e146f24d9ef39be|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_9b13d7850da55c3c6d8e97e9d26646da|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:17:58.098 - INFO [Shibboleth-Access:73] - 20150507T081758Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:17:59.613 - INFO [Shibboleth-Access:73] - 20150507T081759Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:17:59.685 - INFO [Shibboleth-Audit:1028] - 20150507T081759Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_42c0f36940aeaeab530f4e0d3e9c7357|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_4540fbbb9a559d0f4a83131ecf5fe910|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:18:06.827 - INFO [Shibboleth-Access:73] - 20150507T081806Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:19:39.051 - INFO [Shibboleth-Access:73] - 20150507T081939Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:19:39.125 - INFO [Shibboleth-Audit:1028] - 20150507T081939Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_182385c9d73ae65d778a6794f05cec25|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_dde0102495694b47a2a58dea04512cad|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:20:05.046 - INFO [Shibboleth-Access:73] - 20150507T082005Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:20:05.060 - WARN [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:217] - No login context available, unable to proceed with authentication
+16:20:13.097 - INFO [Shibboleth-Access:73] - 20150507T082013Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:20:14.479 - INFO [Shibboleth-Access:73] - 20150507T082014Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:20:14.559 - INFO [Shibboleth-Audit:1028] - 20150507T082014Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_fb7e0d2b20f3d140f1bc950608ddf906|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_26c6c05b83de4b78eb54a09a60111573|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:37:36.555 - INFO [Shibboleth-Access:73] - 20150507T083736Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:37:39.964 - INFO [Shibboleth-Access:73] - 20150507T083739Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:37:39.968 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+16:37:39.968 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+16:42:41.816 - INFO [Shibboleth-Access:73] - 20150507T084241Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:42:44.255 - INFO [Shibboleth-Access:73] - 20150507T084244Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:42:44.258 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+16:42:44.259 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+16:53:15.390 - INFO [Shibboleth-Access:73] - 20150507T085315Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:53:18.639 - INFO [Shibboleth-Access:73] - 20150507T085318Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:53:18.714 - INFO [Shibboleth-Audit:1028] - 20150507T085318Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_50ded0e9375bc6f8a9a780f7046afefe|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_28f9faeab616e43f75baa83ce6ccaa0c|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:55:47.581 - INFO [Shibboleth-Access:73] - 20150507T085547Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:55:49.240 - INFO [Shibboleth-Access:73] - 20150507T085549Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:55:49.301 - INFO [Shibboleth-Audit:1028] - 20150507T085549Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_e37a8ba73ef9ca050c945a65b8ca8c3c|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_9ea7215b01bc134f79cdd1dd3371914a|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:56:03.252 - INFO [Shibboleth-Access:73] - 20150507T085603Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:56:04.551 - INFO [Shibboleth-Access:73] - 20150507T085604Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:56:04.619 - INFO [Shibboleth-Audit:1028] - 20150507T085604Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_8738d6e8bc7733cf6a605b3ae7dd588d|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_e00e57afefba6e935db6e08dce279fb4|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+16:58:29.238 - INFO [Shibboleth-Access:73] - 20150507T085829Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:58:34.814 - INFO [Shibboleth-Access:73] - 20150507T085834Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+16:58:34.874 - INFO [Shibboleth-Audit:1028] - 20150507T085834Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_d562a028fb1094834260c90952ef5141|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_66e88a5b4afbeec318e28d5d1649d76f|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_7ca5f2ac3ab9562f469d07bbe754561e||
+20:29:33.094 - INFO [Shibboleth-Access:73] - 20150507T122933Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:29:35.479 - INFO [Shibboleth-Access:73] - 20150507T122935Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:29:35.551 - INFO [Shibboleth-Audit:1028] - 20150507T122935Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_a2118b8d6c6a4d478026efc7849d9323|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_6b259a8f7b8a9bc10de0fca9b74218e3|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+20:34:38.272 - INFO [Shibboleth-Access:73] - 20150507T123438Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:34:39.926 - INFO [Shibboleth-Access:73] - 20150507T123439Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+20:34:39.986 - INFO [Shibboleth-Audit:1028] - 20150507T123439Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_3ac165e5f5f37b5ad0a83f886f4399d9|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_4ed0c014565f55803fdee44fed4a1039|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+21:43:16.978 - INFO [Shibboleth-Access:73] - 20150507T134316Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+21:43:20.499 - INFO [Shibboleth-Access:73] - 20150507T134320Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+21:43:20.564 - INFO [Shibboleth-Audit:1028] - 20150507T134320Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_1cb190d71cd7d57f14d05a0a429a4874|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_6615e44368e020d4a00f45cbe34997b0|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+21:48:05.092 - INFO [Shibboleth-Access:73] - 20150507T134805Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+21:48:08.803 - INFO [Shibboleth-Access:73] - 20150507T134808Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+21:48:08.874 - INFO [Shibboleth-Audit:1028] - 20150507T134808Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_e7a68cbb9fd55923f34b85b5e0be2ce4|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_9968454aeb71cb71d6b29a48e9bfab5b|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+22:17:25.735 - INFO [Shibboleth-Access:73] - 20150507T141725Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:17:28.173 - INFO [Shibboleth-Access:73] - 20150507T141728Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:17:28.236 - INFO [Shibboleth-Audit:1028] - 20150507T141728Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_532adb7fb4f5bd0ee64c1e85f62c0aff|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_d2163bdcf2f4fbafbc1e2bd40e60eb07|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+22:19:43.231 - INFO [Shibboleth-Access:73] - 20150507T141943Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:19:43.245 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:400] - Error decoding authentication request message
+org.opensaml.ws.message.decoder.MessageDecodingException: No SAMLRequest or SAMLResponse query path parameter, invalid SAML 2 HTTP Redirect message
+	at org.opensaml.saml2.binding.decoding.HTTPRedirectDeflateDecoder.doDecode(HTTPRedirectDeflateDecoder.java:98) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:79) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+22:19:47.079 - INFO [Shibboleth-Access:73] - 20150507T141947Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:19:49.656 - INFO [Shibboleth-Access:73] - 20150507T141949Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:19:49.661 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+22:19:49.662 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+22:27:02.794 - INFO [Shibboleth-Access:73] - 20150507T142702Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:27:06.144 - INFO [Shibboleth-Access:73] - 20150507T142706Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:27:06.210 - INFO [Shibboleth-Audit:1028] - 20150507T142706Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_723064a88773f655fea80b2e5188e5bd|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_1a33c928dcece97993dbe600512acb1a|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+22:31:32.801 - INFO [Shibboleth-Access:73] - 20150507T143132Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:31:36.902 - INFO [Shibboleth-Access:73] - 20150507T143136Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+22:31:36.906 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+22:31:36.906 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:08:08.249 - INFO [Shibboleth-Access:73] - 20150507T150808Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:08:10.166 - INFO [Shibboleth-Access:73] - 20150507T150810Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:08:10.228 - INFO [Shibboleth-Audit:1028] - 20150507T150810Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_a56748e8d692f91759cd8f9d2ca109e5|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_df44947900daaa89a6f7b29f49055d6f|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+23:11:42.801 - INFO [Shibboleth-Access:73] - 20150507T151142Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:12:52.172 - INFO [Shibboleth-Access:73] - 20150507T151252Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:15:55.911 - INFO [Shibboleth-Access:73] - 20150507T151555Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:15:55.915 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:15:55.915 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:24:38.460 - INFO [Shibboleth-Access:73] - 20150507T152438Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:24:48.849 - INFO [Shibboleth-Access:73] - 20150507T152448Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:24:48.853 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://127.0.0.1/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:24:48.853 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:24:50.494 - INFO [Shibboleth-Access:73] - 20150507T152450Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:24:50.503 - WARN [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:217] - No login context available, unable to proceed with authentication
+23:28:08.645 - INFO [Shibboleth-Access:73] - 20150507T152808Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:28:10.227 - INFO [Shibboleth-Access:73] - 20150507T152810Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:28:10.285 - INFO [Shibboleth-Audit:1028] - 20150507T152810Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_09d12b902ed6c2d13a1d47f17ac3ace6|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_8f77bba1c278dae724dd287b12b175ef|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+23:29:05.131 - INFO [Shibboleth-Access:73] - 20150507T152905Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:29:07.199 - INFO [Shibboleth-Access:73] - 20150507T152907Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:29:07.204 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://ubuntu-xyong/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:29:07.204 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:33:30.113 - INFO [Shibboleth-Access:73] - 20150507T153330Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:33:31.871 - INFO [Shibboleth-Access:73] - 20150507T153331Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:33:31.926 - INFO [Shibboleth-Audit:1028] - 20150507T153331Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_7cfcb3c890ab5379e90f31624146e4bf|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_db5b23b5a973373928438d9b7176b45d|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+23:36:03.027 - INFO [Shibboleth-Access:73] - 20150507T153603Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:36:05.050 - INFO [Shibboleth-Access:73] - 20150507T153605Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:36:05.054 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://ubuntu-xyong/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:36:05.055 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:38:22.967 - INFO [Shibboleth-Access:73] - 20150507T153822Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:38:25.208 - INFO [Shibboleth-Access:73] - 20150507T153825Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:38:25.265 - INFO [Shibboleth-Audit:1028] - 20150507T153825Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_ba73f6a1c95eb158ef2f4d7ce8ec50c4|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_0be9f902b602a3ae24c74b6ce354d19c|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_fc96a7cf6bb52acee53cb96441ea9f8d||
+23:54:13.730 - INFO [Shibboleth-Access:73] - 20150507T155413Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:54:15.375 - INFO [Shibboleth-Access:73] - 20150507T155415Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:54:15.379 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:54:15.379 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:54:54.383 - INFO [Shibboleth-Access:73] - 20150507T155454Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:54:54.392 - WARN [edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine:217] - No login context available, unable to proceed with authentication
+23:56:33.870 - INFO [Shibboleth-Access:73] - 20150507T155633Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:56:45.022 - INFO [Shibboleth-Access:73] - 20150507T155645Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:56:45.026 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://localhost/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:56:45.027 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth
+23:58:08.583 - INFO [Shibboleth-Access:73] - 20150507T155808Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:58:11.703 - INFO [Shibboleth-Access:73] - 20150507T155811Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:58:11.707 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://sp.edx.org/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://sp.edx.org1/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:58:11.707 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://sp.edx.org/shibboleth

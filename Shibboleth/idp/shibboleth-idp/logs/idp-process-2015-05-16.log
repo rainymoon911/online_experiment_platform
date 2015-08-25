@@ -1,0 +1,53 @@
+17:40:14.883 - INFO [Shibboleth-Access:73] - 20150516T094014Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+17:40:24.108 - INFO [Shibboleth-Access:73] - 20150516T094024Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+17:40:24.190 - INFO [Shibboleth-Audit:1028] - 20150516T094024Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_80cc1f04e64f0d2937447f2a1a1307a1|http://os.edx.com/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_aafca2f2aae7dc99f74b18090eee9209|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_c1e20d65445f13d8891fe7dfe4474a7a||
+23:12:56.737 - INFO [Shibboleth-Access:73] - 20150516T151256Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:13:04.801 - INFO [Shibboleth-Access:73] - 20150516T151304Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:13:04.879 - INFO [Shibboleth-Audit:1028] - 20150516T151304Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_8d3314003f7f283c8530b8899a0037f4|http://os.edx.com/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_b92988cbc0a4bf2245128c503ca166d7|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_b694527e15afc5db97735748c64139a7||
+23:17:15.914 - INFO [Shibboleth-Access:73] - 20150516T151715Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:17:22.655 - INFO [Shibboleth-Access:73] - 20150516T151722Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:17:22.658 - WARN [org.opensaml.saml2.binding.AuthnResponseEndpointSelector:206] - Relying party 'http://os.edx.com/shibboleth' requested the response to be returned to endpoint with ACS URL 'http://os.edx.com:8080/Shibboleth.sso/SAML2/POST'  and binding 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST' however no endpoint, with that URL and using a supported binding,  can be found in the relying party's metadata 
+23:17:22.659 - ERROR [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:447] - No return endpoint available for relying party http://os.edx.com/shibboleth
+23:29:55.400 - INFO [Shibboleth-Access:73] - 20150516T152955Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:29:55.449 - WARN [org.opensaml.saml2.binding.security.SAML2AuthnRequestsSignedRule:81] - SPSSODescriptor role metadata for entityID 'http://os.edx.com/shibboleth' could not be resolved
+23:29:55.452 - WARN [edu.internet2.middleware.shibboleth.idp.profile.AbstractSAMLProfileHandler:305] - No metadata for relying party http://os.edx.com/shibboleth, treating party as anonymous
+23:29:55.455 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:222] - SAML 2 SSO profile is not configured for relying party http://os.edx.com/shibboleth
+23:30:49.015 - INFO [Shibboleth-Access:73] - 20150516T153049Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:30:49.019 - WARN [org.opensaml.common.binding.security.MessageReplayRule:99] - Replay detected of message '_5c2ad3fff472a34ce554060a7f41b650' from issuer http://os.edx.com/shibboleth
+23:30:49.026 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:406] - Message did not meet security requirements
+org.opensaml.ws.security.SecurityPolicyException: Rejecting replayed message ID '_5c2ad3fff472a34ce554060a7f41b650' from issuer http://os.edx.com/shibboleth
+	at org.opensaml.common.binding.security.MessageReplayRule.evaluate(MessageReplayRule.java:100) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.security.provider.BasicSecurityPolicy.evaluate(BasicSecurityPolicy.java:51) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.processSecurityPolicy(BaseMessageDecoder.java:132) ~[openws-1.5.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:83) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+23:30:51.751 - INFO [Shibboleth-Access:73] - 20150516T153051Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:30:58.851 - INFO [Shibboleth-Access:73] - 20150516T153058Z|192.168.1.113|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:30:59.231 - INFO [Shibboleth-Audit:1028] - 20150516T153059Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_651514a544e28a64c6685bc52de34165|http://os.edx.com:8080/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://idp.edx.org:8080/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_6774dfe3fb5035fa4591850fd2e0f84f|zyu|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,email,transientId,|_c8f31fe4cda93a082fa382b3229e1812||

@@ -1,0 +1,2 @@
+00:01:15.968 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.
+00:01:18.700 - WARN [edu.internet2.middleware.shibboleth.common.config.service.ServletContextAttributeExporter:74] - This service may only be used when services are loaded within a web application context.

@@ -1,0 +1,187 @@
+08:24:32.288 - INFO [Shibboleth-Access:73] - 20150608T002432Z|204.236.235.245|solaris.cs.tsinghua.edu.cn:80|/profile/SAML2/Redirect/SSO|
+08:24:32.353 - ERROR [org.opensaml.xml.parse.StaticBasicParserPool:50] - XML Parsing Error
+org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.endOfFileHook(XMLDocumentScannerImpl.java:1311) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3160) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) [na:1.7.0_80]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) [na:1.7.0_80]
+	at org.opensaml.xml.parse.StaticBasicParserPool$DocumentBuilderProxy.parse(StaticBasicParserPool.java:673) [xmltooling-1.4.5.jar:na]
+	at org.opensaml.xml.parse.StaticBasicParserPool.parse(StaticBasicParserPool.java:234) [xmltooling-1.4.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.unmarshallMessage(BaseMessageDecoder.java:186) [openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.HTTPRedirectDeflateDecoder.doDecode(HTTPRedirectDeflateDecoder.java:102) [opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:79) [openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) [opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+08:24:32.357 - ERROR [org.opensaml.ws.message.decoder.BaseMessageDecoder:208] - Encountered error parsing message into its DOM representation
+org.opensaml.xml.parse.XMLParserException: Invalid XML
+	at org.opensaml.xml.parse.StaticBasicParserPool.parse(StaticBasicParserPool.java:237) ~[xmltooling-1.4.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.unmarshallMessage(BaseMessageDecoder.java:186) [openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.HTTPRedirectDeflateDecoder.doDecode(HTTPRedirectDeflateDecoder.java:102) [opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:79) [openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) [opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+Caused by: org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.endOfFileHook(XMLDocumentScannerImpl.java:1311) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3160) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) ~[na:1.7.0_80]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.7.0_80]
+	at org.opensaml.xml.parse.StaticBasicParserPool$DocumentBuilderProxy.parse(StaticBasicParserPool.java:673) ~[xmltooling-1.4.5.jar:na]
+	at org.opensaml.xml.parse.StaticBasicParserPool.parse(StaticBasicParserPool.java:234) ~[xmltooling-1.4.5.jar:na]
+	... 31 common frames omitted
+08:24:32.362 - WARN [edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler:400] - Error decoding authentication request message
+org.opensaml.ws.message.decoder.MessageDecodingException: Encountered error parsing message into its DOM representation
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.unmarshallMessage(BaseMessageDecoder.java:209) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.HTTPRedirectDeflateDecoder.doDecode(HTTPRedirectDeflateDecoder.java:102) ~[opensaml-2.6.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.decode(BaseMessageDecoder.java:79) ~[openws-1.5.5.jar:na]
+	at org.opensaml.saml2.binding.decoding.BaseSAML2MessageDecoder.decode(BaseSAML2MessageDecoder.java:70) ~[opensaml-2.6.5.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.decodeRequest(SSOProfileHandler.java:386) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.performAuthentication(SSOProfileHandler.java:211) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:189) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.idp.profile.saml2.SSOProfileHandler.processRequest(SSOProfileHandler.java:90) [shibboleth-identityprovider-2.4.4.jar:na]
+	at edu.internet2.middleware.shibboleth.common.profile.ProfileRequestDispatcherServlet.service(ProfileRequestDispatcherServlet.java:83) [shibboleth-common-1.4.4.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717) [servlet-api-2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.util.NoCacheFilter.doFilter(NoCacheFilter.java:50) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.idp.session.IdPSessionFilter.doFilter(IdPSessionFilter.java:87) [shibboleth-identityprovider-2.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at edu.internet2.middleware.shibboleth.common.log.SLF4JMDCCleanupFilter.doFilter(SLF4JMDCCleanupFilter.java:52) [shibboleth-common-1.4.4.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489) [tomcat-coyote-6.0.35.jar:6.0.35]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_80]
+Caused by: org.opensaml.xml.parse.XMLParserException: Invalid XML
+	at org.opensaml.xml.parse.StaticBasicParserPool.parse(StaticBasicParserPool.java:237) ~[xmltooling-1.4.5.jar:na]
+	at org.opensaml.ws.message.decoder.BaseMessageDecoder.unmarshallMessage(BaseMessageDecoder.java:186) ~[openws-1.5.5.jar:na]
+	... 30 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.endOfFileHook(XMLDocumentScannerImpl.java:1311) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3160) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.7.0_80]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) ~[na:1.7.0_80]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[na:1.7.0_80]
+	at org.opensaml.xml.parse.StaticBasicParserPool$DocumentBuilderProxy.parse(StaticBasicParserPool.java:673) ~[xmltooling-1.4.5.jar:na]
+	at org.opensaml.xml.parse.StaticBasicParserPool.parse(StaticBasicParserPool.java:234) ~[xmltooling-1.4.5.jar:na]
+	... 31 common frames omitted
+21:55:54.210 - INFO [Shibboleth-Access:73] - 20150608T135554Z|122.235.41.192|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:12:15.239 - INFO [Shibboleth-Access:73] - 20150608T151215Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:12:15.287 - INFO [Shibboleth-Access:73] - 20150608T151215Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:12:24.660 - INFO [Shibboleth-Access:73] - 20150608T151224Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:12:24.730 - INFO [Shibboleth-Audit:1028] - 20150608T151224Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_b004e8a907d249e1dd2b1cc6ed95a817|http://south.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_f914ea3bc2f4af2ca74a5b40d91dfad7|bitmoon|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_14ed623af2b7245a50ad67b16737e881||
+23:15:15.518 - INFO [Shibboleth-Access:73] - 20150608T151515Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:15:15.587 - INFO [Shibboleth-Access:73] - 20150608T151515Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:15:34.921 - INFO [Shibboleth-Access:73] - 20150608T151534Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:15:34.975 - INFO [Shibboleth-Audit:1028] - 20150608T151534Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_0ac870211d02b2cea995a274354ad1b6|http://south.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_4743145ce256ab685e924cca794eff6e|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_ac8c7cc2452fefb278c677767350b91b||
+23:16:22.246 - INFO [Shibboleth-Access:73] - 20150608T151622Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:16:24.807 - INFO [Shibboleth-Access:73] - 20150608T151624Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:16:24.873 - INFO [Shibboleth-Audit:1028] - 20150608T151624Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_6f2065e3b48b870e9cc28918a1a01a71|http://east.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_4c2dd488ab5423155f346692a3b85d21|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_b8d82277c20f27c763b20f873cd89e63||
+23:27:26.303 - INFO [Shibboleth-Access:73] - 20150608T152726Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:27:37.277 - INFO [Shibboleth-Access:73] - 20150608T152737Z|192.168.1.114|idp.edx.org:8080|/profile/SAML2/Redirect/SSO|
+23:27:37.337 - INFO [Shibboleth-Audit:1028] - 20150608T152737Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_be99745108dd050cc27c136764a7ff99|http://sp.edx.org/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_c1ccc11481aef6867549070d2e857000|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_46a0cea6fda6da36995f70232ebfd837||
+23:33:09.532 - INFO [Shibboleth-Access:73] - 20150608T153309Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:33:12.089 - INFO [Shibboleth-Access:73] - 20150608T153312Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:33:12.146 - INFO [Shibboleth-Audit:1028] - 20150608T153312Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_d79e321158d64d06eedca47fb973af58|http://east.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_d2b40ac0ca50e94ff533e725c1be2f83|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_b8d82277c20f27c763b20f873cd89e63||
+23:33:42.759 - INFO [Shibboleth-Access:73] - 20150608T153342Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:33:44.625 - INFO [Shibboleth-Access:73] - 20150608T153344Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:33:44.679 - INFO [Shibboleth-Audit:1028] - 20150608T153344Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_6e79a7f2025d0c817095433d47c40a3c|http://east.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_4410d2b4b0818c7f003116cb9d02f5a3|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_b8d82277c20f27c763b20f873cd89e63||
+23:37:36.869 - INFO [Shibboleth-Access:73] - 20150608T153736Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:37:38.757 - INFO [Shibboleth-Access:73] - 20150608T153738Z|211.68.2.46|solaris.cs.tsinghua.edu.cn:11154|/profile/SAML2/Redirect/SSO|
+23:37:38.818 - INFO [Shibboleth-Audit:1028] - 20150608T153738Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|_c43a9fb3af05189fbf880bf7182893d0|http://east.cs.tsinghua.edu.cn/shibboleth|urn:mace:shibboleth:2.0:profiles:saml2:sso|http://solaris.cs.tsinghua.edu.cn:11154/idp/shibboleth|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_2efc007b1dfc385df107c3770eaff089|testshib|urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|uid,commonName,eppn,email,transientId,|_b8d82277c20f27c763b20f873cd89e63||
