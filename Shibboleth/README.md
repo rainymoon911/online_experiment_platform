@@ -264,7 +264,7 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 ###５.在OpenEdX上配置SP  
 
 * 先按步骤３配置SP
-* 将OpenEdX/edx_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致),并将edx_apache2/sites-available/lms中的S<your domain of OpenEdX>改为OpenEdX的域名
+* 将OpenEdX/edx_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致),并将edx_apache2/sites-available/lms中的<your domain of OpenEdX>改为OpenEdX的域名
 * 复制/OpenEdX/edx_nginx/sites-available/lms 至 /etc/nginx/sites-available/
 * 重启Apache以及Nginx
 ```
