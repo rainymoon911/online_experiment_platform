@@ -2,8 +2,8 @@ WSGIPythonHome /edx/app/edxapp/venvs/edxapp
 WSGIRestrictEmbedded On
 
 <VirtualHost *:8080>
-    ServerName http://os.edx.com
-    ServerAlias *.os.edx.com
+    ServerName http://<your domain of OpenEdX>
+    ServerAlias *.<your domain of OpenEdX>
     UseCanonicalName On
 
     Alias /static/ /opt/wwc/staticfiles/
