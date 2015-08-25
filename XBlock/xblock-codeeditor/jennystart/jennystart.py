@@ -24,6 +24,7 @@ class JennystartXBlock(XBlock):
     codeData = String(default="", scope=Scope.user_state, help="codeData")
     file_path=String(default="", scope=Scope.user_state, help="file_path")
     logger = Util .uc_logger()
+    lab = String(help="Student Lab",default="no_lab", scope=Scope.user_state)
 
 
     # TO-DO: change this view to display your data your own way.
@@ -47,6 +48,7 @@ class JennystartXBlock(XBlock):
 	self.logger.info(username + " start edit")
         if result:
             relative_path = result["view_file"]
+	    self.lab = result["lab"]
             self.file_path = base_path + student_id + relative_path
 	    self.logger.info("file " + relative_path)
 	    output=open(self.file_path)
@@ -103,6 +105,16 @@ class JennystartXBlock(XBlock):
         output.write(self.codeData)
 	self.logger.info("write code " + self.file_path + " " + self.codeData)
         output.close()
+
+	# generate local codebrowser file
+ 	if self.lab == "no_lab":
+	    self.logger.info("generator local no lab choose")
+	    return {"result":False}
+	student_id = self.runtime.anonymous_student_id
+        real_user = self.runtime.get_real_user(student_id)
+        username = real_user.username
+	self.logger.info("generate_local " + username + " " + self.lab)
+        os.system("/edx/var/edxapp/staticfiles/xblock-script/generator_local.sh "  + student_id + " " + self.lab)
         return {"result":True}
 
     @XBlock.json_handler

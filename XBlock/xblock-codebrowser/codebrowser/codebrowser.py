@@ -173,35 +173,12 @@ class CodeBrowserBlock(XBlock):
     	return {"result": True}
     
     @XBlock.json_handler
-    def generate_local(self, data, suffix=""):
-      	"""
-        generate static file for codebrowse
-        """
-    	student_id = self.runtime.anonymous_student_id
-	real_user = self.runtime.get_real_user(student_id)
-	username = real_user.username
-	lab = data["lab"]
-	self.logger.info("generate_local " + username + " " +lab)
-    	os.system("/edx/var/edxapp/staticfiles/xblock-script/generator_local.sh "  + student_id + " " + lab)
-    	self.lab = lab
-
-	src = 'http://166.111.68.45:11133/static/codebrowser/' + student_id + '/ucore_lab/' + self.lab + '/index.html'
-	conn = pymongo.Connection('localhost', 27017)
-	db = conn.test
-	codeview = db.codeview
-	result = codeview.find_one({"username":username})
-	if result:
-    	    codeview.update({"username":username},{"$set":{"src_html":src}})
-	else:
-    	    codeview.insert({"username":username, "src_html":src})
-	conn.disconnect()
-    	return {"result": True}
-
-    @XBlock.json_handler
     def edit(self, data, suffix=""):
       	"""
         edit file user are viewing
         """
+	if self.lab == "no_lab":
+	    return {"result": False, "message": "you should pull code from git first"}
 	src = data["src"]
     	student_id = self.runtime.anonymous_student_id
 	real_user = self.runtime.get_real_user(student_id)
@@ -225,9 +202,9 @@ class CodeBrowserBlock(XBlock):
 	codeview = db.codeview
 	result = codeview.find_one({"username":username})
 	if result:
-    	    codeview.update({"username":username},{"$set":{"view_file":src,"src_html":src_html}})
+    	    codeview.update({"username":username},{"$set":{"view_file":src,"src_html":src_html,"lab":self.lab}})
 	else:
-    	    codeview.insert({"username":username, "view_file":src, "src_html":src_html})
+    	    codeview.insert({"username":username, "view_file":src, "src_html":src_html, "lab":self.lab})
         conn.disconnect()
         
     	return {"result": True}
