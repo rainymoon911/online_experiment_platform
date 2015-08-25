@@ -1,7 +1,7 @@
 部署Shibboleth需要LDAP服务器,IDP服务器,以及在Gitlab,OpenEdX上分别部署SP.
 ====
 
-OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密码使用password代替)
+OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密码使用password代替),可做参考
 
 1.部署LDAP服务器.
 ====
@@ -225,8 +225,38 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 
 4.在Gitlab上配置SP
 ====
-
 [官方配置文档](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/integration/shibboleth.md)
+
+* 先按步骤3安装SP,保证SP正常工作,将Gitlab/git_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致)
+
+* 配置Gitlab与SP连接 
+
+	vi /etc/gitlab/gitlab.rb
+	//修改配置至如下
+	external_url 'https://gitlab.example.com'
+	gitlab_rails['internal_api_url'] = 'https://gitlab.example.com'
+
+	# disable Nginx
+	nginx['enable'] = false
+
+	gitlab_rails['omniauth_allow_single_sign_on'] = true
+	gitlab_rails['omniauth_block_auto_created_users'] = false
+	gitlab_rails['omniauth_enabled'] = true
+	gitlab_rails['omniauth_providers'] = [
+  	  {
+    		"name" => 'shibboleth',
+        	"args" => {
+        	"shib_session_id_field" => "HTTP_SHIB_SESSION_ID",
+        	"shib_application_id_field" => "HTTP_SHIB_APPLICATION_ID",
+        	"uid_field" => 'HTTP_EPPN',
+        	"name_field" => 'HTTP_CN',
+        	"info_fields" => { "email" => 'HTTP_MAIL'}
+        	}
+  	  }
+	]
+	//使配置生效(若此时Apache未启动,则手动启动,/etc/init.d/apache2 restart)
+	sudo gitlab-ctl reconfigure
+
 
     
 
