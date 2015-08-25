@@ -36,3 +36,4 @@ db.user.save({username:"zyu_test"})
 db.codeview.save({username:"zyu_test"})
 ```
 
+###4.uc_docker安装完毕后需要在后台创建用户可见的Docker,Docker名为ucore_lab,其余默认即可
