@@ -231,6 +231,7 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 
 * 配置Gitlab与SP连接 
 
+```
 	vi /etc/gitlab/gitlab.rb
 	//修改配置至如下
 	external_url 'https://gitlab.example.com'
@@ -257,6 +258,6 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 	//使配置生效(若此时Apache未启动,则手动启动,/etc/init.d/apache2 restart)
 	sudo gitlab-ctl reconfigure
 
-
+```
     
 
