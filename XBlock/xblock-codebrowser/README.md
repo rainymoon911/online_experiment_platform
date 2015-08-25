@@ -28,6 +28,8 @@
     
 ###4.安装XBlock
 
+填写config.py配置文件中的Gitlab的ip以及端口
+    
     sudo -u edxapp /edx/bin/pip.edxapp install <path_of_xblock-codebrowser>
 
 卸载命令:
