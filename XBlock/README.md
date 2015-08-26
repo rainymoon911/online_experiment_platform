@@ -1,6 +1,8 @@
 部署顺序:uc_docker->xblock-codeeditor->xblock-codebrowser
 ====
 
+[部署文件备份,供参考](https://github.com/rainymoon911/online_experiment_platform/tree/master/OpenEdX/edx_config.backup)
+
 ###使xblock可用
 
 * edx-platform/lms/envs/common.py中去掉注释：
