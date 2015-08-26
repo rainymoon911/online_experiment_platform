@@ -1,6 +1,8 @@
 edx在Ubuntu12.04 64上的部署
 ======
 
+edx_config.backup目录中为OpenEdX服务器上的主要配置文件备份
+
 安装oraclejdk
 ======
 第一步：区分32位还是64位操作系统
