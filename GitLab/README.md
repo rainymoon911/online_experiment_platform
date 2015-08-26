@@ -4,6 +4,8 @@ git_config.backup目录中为Gitlab服务器上的配置文件备份
 
 安装完成后,做如下修改:
 
+[user.rb备份](https://github.com/rainymoon911/online_experiment_platform/blob/master/GitLab/git_config.backup/users.rb)
+
 1.去除邮件激活
 
 
@@ -14,6 +16,8 @@ git_config.backup目录中为Gitlab服务器上的配置文件备份
     user.skip_confirmation!
     if user.save
     ...
+
+[gitlab.rb备份](https://github.com/rainymoon911/online_experiment_platform/blob/master/GitLab/git_config.backup/gitlab.rb)
 
 2.去除前台的注册功能(默认是关闭的,若开启,按下列步骤关闭)
 
