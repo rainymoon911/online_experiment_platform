@@ -25,7 +25,7 @@ OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密�
 1.4 test_ldap.py可用于测试OpenLDAP是否正常工作(修改其中的ip,baseDN以及searchFilter参数,保持与IDP中的配置一致,
 详细可参考shibboleth仓库中的配置文件)
 
-1.5 createUser.ldif用于手动创建用户(修改其中的用户参数)
+1.5 create_user.ldif用于手动创建用户(修改其中的用户参数)
 
 
 2.部署IDP
