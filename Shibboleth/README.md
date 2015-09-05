@@ -18,6 +18,10 @@ OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密�
     
 1.3 登录管理员账号创建存储用户的结点,例如ou=Users,dc=openedx,dc=com
 
+或者使用命令行添加Users节点:
+
+	ldapadd -x -D "cn=admin,dc=edx,dc=com" -W -f create_group.ldif
+
 1.4 test_ldap.py可用于测试OpenLDAP是否正常工作(修改其中的ip,baseDN以及searchFilter参数,保持与IDP中的配置一致,
 详细可参考shibboleth仓库中的配置文件)
 
