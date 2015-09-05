@@ -1,0 +1,10 @@
+dn: uid=user_name,ou=Users,dc=openedx,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: eduPerson
+uid: user_name
+sn: user_name
+givenName: user_name
+cn: user_name
+userPassword: password
+eduPersonPrincipalName:email
