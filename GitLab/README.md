@@ -1,4 +1,5 @@
 参照[官网](https://about.gitlab.com/downloads/)的安装步骤
+[中文版安装步骤整理](http://blog.csdn.net/jenyzhang/article/details/52353355)
 
 git_config.backup目录中为Gitlab服务器上的配置文件备份
 
