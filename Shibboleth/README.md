@@ -49,6 +49,23 @@ OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密�
     //add the following code
     ServerName idp.edx.org
     
+    sudo vi /etc/init.d/tomcat7
+    //找到JAVA_OPTS ，添加参数：-XX:+UseG1GC -Xmx1500m -XX:MaxPermSize=128m 
+    JAVA_OPTS="-Djava.awt.headless=true -XX:+UseG1GC -Xmx1500m -XX:MaxPermSize=128m"
+    
+    sudo vi /etc/tomcat7/server.xml
+    //找到 Connector ,添加属性maxPostSize ，设置值为100K(100000)
+    maxPostSize="100000"
+    
+    sudo vi /etc/tomcat7/Catalina/localhost/idp.xml
+    //添加下面的内容。idp.xml是新创建的文件
+    <Context docBase="IDP_HOME/war/idp.war"
+         privileged="true"
+         antiResourceLocking="false"
+         antiJARLocking="false"
+         unpackWAR="false"
+         swallowOutput="true" />
+    
 2.2 jdk(oracle jdk--officially recommended):
 
     sudo apt-get install python-software-properties
@@ -160,7 +177,7 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 
 3.2.1
 
-    cd <dir of sp>
+    cd <dir of sp>  //sp的路径一般为/etc/shibboleth/
     vi shibboleth2.xml
     //修改sp的entityID为你SP的域名
     <ApplicationDefaults entityID="http://sp.edx.org/shibboleth"
@@ -195,13 +212,13 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 在sp端配置idp的元数据文件,将idp服务器上的idp-metadata.xml(或者你可以为该文件重命名)复制到sp服务器上的SP目录(默认为/etc/shibboleth)
 
 在sp端做如下修改:
-
+    cd /etc/shibboleth/
     vi shibboleth2.xml
     //add the following code
     <MetadataProvider type="XML" file="idp-metadata.xml"/>
     
 3.2.3 配置属性映射文件attribute-map.xml
-
+    cd /etc/shibboleth/
     vi attribute-map.xml
     //add the following code
     <Attribute name="urn:oid:2.5.4.3" id="cn"/>
@@ -232,6 +249,9 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 [官方配置文档](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/integration/shibboleth.md)
 
 * 先按步骤3安装SP,保证SP正常工作,将Gitlab/git_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致)
+  更改sites-enables/000-default 以及apache2.conf文件中的ServerName
+  a2enmod rewrite
+  a2enmod proxy
 
 * 配置Gitlab与SP连接 
 
