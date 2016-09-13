@@ -212,12 +212,14 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 在sp端配置idp的元数据文件,将idp服务器上的idp-metadata.xml(或者你可以为该文件重命名)复制到sp服务器上的SP目录(默认为/etc/shibboleth)
 
 在sp端做如下修改:
+
     cd /etc/shibboleth/
     vi shibboleth2.xml
     //add the following code
     <MetadataProvider type="XML" file="idp-metadata.xml"/>
     
 3.2.3 配置属性映射文件attribute-map.xml
+
     cd /etc/shibboleth/
     vi attribute-map.xml
     //add the following code
@@ -249,9 +251,11 @@ idp的默认端口是8080(8443用于ECP),如果使用默认端口的话,配置�
 [官方配置文档](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/integration/shibboleth.md)
 
 * 先按步骤3安装SP,保证SP正常工作,将Gitlab/git_apache2目录中的文件拷贝至/etc/apache2/目录中覆盖(注意修改权限,与原文件保持一致)
+
   更改sites-enables/000-default 以及apache2.conf文件中的ServerName
-  a2enmod rewrite
-  a2enmod proxy
+  
+       a2enmod rewrite
+       a2enmod proxy
 
 * 配置Gitlab与SP连接 
 
