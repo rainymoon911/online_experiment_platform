@@ -37,15 +37,15 @@ OpenEdX,Gitlab,idp目录包含了我们所使用的所有相关配置文件(密�
     a2enmod ssl
     a2enmod proxy_ajp
 
-    sudo apt-get install tomcat6
+    sudo apt-get install tomcat7
     
 [apache和tomcat的配置](https://wiki.shibboleth.net/confluence/display/SHIB2/IdPApacheTomcatPrepare) 
     
     vi /etc/hosts
     //add the following code
-    127.0.0.1 idp.edx.org sp
+    127.0.0.1	idp.edx.org	shibboleth	
     
-    vi /tomcat6/apache2.conf
+    vi /etc/apache2/apache2.conf
     //add the following code
     ServerName idp.edx.org
     
