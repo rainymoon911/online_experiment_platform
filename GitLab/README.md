@@ -1,4 +1,5 @@
 参照[官网](https://about.gitlab.com/downloads/)的安装步骤
+[中文版安装步骤整理](http://blog.csdn.net/jenyzhang/article/details/52353355)
 
 ####1. 安装前查看端口状态，并把80和8080端口解除占用
    由于gitlab安装结束后会占用80和8080端口，所以如果你的操作系统中己有apache,tomcat那么这两个端口是处于占用状态的，会导致安装gitlab后访问localhost时出现502错误。因此，我们先释放这两个端口。
